@@ -1,34 +1,38 @@
+### Toma Full Project
+# Merged as of 1/26/17 9:36am MST
+# Served on 6660
+
 ## Login
-√ login transmits this url on sign in: http://localhost:8080/login.html?email=qweasd%40gmail.com&password=qweasd
-√ Validates the Email with @, empty field
-√ Forgot PW links out
+- √ login transmits this url on sign in: http://localhost:8080/login.html?email=qweasd%40gmail.com&password=qweasd
+- √ Validates the Email with @, empty field
+- √ Forgot PW links out
 - ?? Does not validate the '.com' part of email
 - ?? Forgot PW could be styled differently, added to the bottom / middle of form or below input
 - No min char count on PW
 
 ## Request password
-√ transmits the below url on request:
+- √ transmits the below url on request:
 http://localhost:8080/request-password.html?email=qweasd%40gmail.com
-√ Validates the Email with @, empty field
+- √ Validates the Email with @, empty field
 - ?? Does not validate the '.com' part of email
 
 ## Confirm password
-√ Validates if empty
-√ Transmits the below URL when submitted:
+- √ Validates if empty
+- √ Transmits the below URL when submitted:
 http://localhost:8080/confirm-password.html?password=qweqwe&confirm_password=qweqwe
 - ?? No minimum character count
 - ?? No inline validation of matching strings
 
 ## Servers
-√ Search
-√ View Grid / Table Adjuster
-√ On Hold Disabled
-√ Add Server Links out
+- √ Search
+- √ View Grid / Table Adjuster
+- √ On Hold Disabled
+- √ Add Server Links out
 - ?? Clickable grid cards, other UI can click to activate, see more details
 - ?? Aside does not have full functionality (only home link works)
 
 ## Add Server Page
-√ Input checkboxes function, are attractive
+- √ Input checkboxes function, are attractive
 - Changing parameters does not update url string
 http://localhost:8080/add-server.html?image=on&size=on&cloud=on&server_name_1=qweasd
 - update line height in \_numbers to be 25px or font size to 1.1 em and line height to 1.6em
@@ -42,16 +46,16 @@ http://localhost:8080/add-server.html?image=on&size=on&cloud=on&server_name_1=qw
 - Column filters are located on the top of the line rather than in the middle of the line
 
 # Clouds
-√ Add Cloud modal pops up, has flow, disables
-√ Pagination plus pagination styles work
+- √ Add Cloud modal pops up, has flow, disables
+- √ Pagination plus pagination styles work
 - Cloud Modal doesn't submit
 - Add Cloud has base dummy functionality
 - Gear Dropdowns drop, but nothing happens when selected
 
 # Image Library
-√ Pagination works, contains styles
-√ Upload More modal pops up and drops Dropdowns
-√ Dropzone allows for drop of file and it looks like its prepped for upload
+- √ Pagination works, contains styles
+- √ Upload More modal pops up and drops Dropdowns
+- √ Dropzone allows for drop of file and it looks like its prepped for upload
 - Add Cache doesn't link out
 - Need Cache not positioned well
 - Gear Dropdowns drop, but nothing happens when selected
@@ -61,13 +65,13 @@ http://localhost:8080/add-server.html?image=on&size=on&cloud=on&server_name_1=qw
 
 
 # Orgs
-√ Pagination works, contains styles
-√ Modal pops up and closes
-√ Modal swaps between all the pages on the form
+- √ Pagination works, contains styles
+- √ Modal pops up and closes
+- √ Modal swaps between all the pages on the form
 - ^ Administrator + Billing Contact Name fields do not swap when changing tabs.  The fields remain the same,  
-√ Fields keep their values betweens screens
+- √ Fields keep their values betweens screens
 - Add Functionality does not trigger url
-√ Cancel works
+- √ Cancel works
 
 
 # Provider Plans
@@ -110,8 +114,8 @@ http://localhost:8080/add-server.html?image=on&size=on&cloud=on&server_name_1=qw
 - Need to homogenize the image text / font with the spans.  Use lighter grey?
 
 # Tickets
-√ Filter Functions
-√ Table functions
+- √ Filter Functions
+- √ Table functions
 - No create ticket modal
 -
 
@@ -119,20 +123,8 @@ http://localhost:8080/add-server.html?image=on&size=on&cloud=on&server_name_1=qw
 - No data
 
 # History
-√ Table shows
+- √ Table shows
 
 # Backups
-√ Notification on next Backup
+- √ Notification on next Backup
 - Still shows create Ticket
-- 
-
-
-
-
-
-
-
-
-
-
--
