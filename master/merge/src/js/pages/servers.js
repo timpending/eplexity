@@ -39,8 +39,8 @@
         "name":"Server Name",
         "vm":"vmware.png",
         "ip-address":"54.93.182.207",
-        "size":"x5",
-        "datacenter":"EU (Frankfurt)",
+        "size":"x4",
+        "datacenter":"US (New York)",
         "status":['active', 'active'],
         "actions":"",
         "href":"server-details.html"
@@ -48,10 +48,10 @@
       {
         "name":"Server Name",
         "vm":"vmware.png",
-        "ip-address":"54.93.182.207",
-        "size":"x5",
-        "datacenter":"EU (Frankfurt)",
-        "status":['active', 'active'],
+        "ip-address":"54.93.182.200",
+        "size":"x2",
+        "datacenter":"EU (Berlin)",
+        "status":['waiting', 'waiting'],
         "actions":"",
         "href":"server-details.html"
       }

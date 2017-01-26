@@ -23,6 +23,11 @@ http://localhost:8080/confirm-password.html?password=qweqwe&confirm_password=qwe
 - ?? No minimum character count
 - ?? No inline validation of matching strings
 
+## Sidebar
+- No categories in regular Sidebar
+- Includes admin sub section
+
+
 ## Servers
 - √ Search
 - √ View Grid / Table Adjuster
@@ -30,6 +35,8 @@ http://localhost:8080/confirm-password.html?password=qweqwe&confirm_password=qwe
 - √ Add Server Links out
 - ?? Clickable grid cards, other UI can click to activate, see more details
 - ?? Aside does not have full functionality (only home link works)
+- **ISSUE** Sidebar doesn't scroll to bottom
+- **ISSUE** No toggle on small screens
 
 ## Add Server Page
 - √ Input checkboxes function, are attractive

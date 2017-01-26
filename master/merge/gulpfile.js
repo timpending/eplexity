@@ -257,7 +257,7 @@ gulp.task('serve', ['dev'], function () {
 		//tunnel: "qubprojectstarter",
 		https: false,
 		notify: false,
-		port: 8080,
+		port: 7110,
 		server: {
 			baseDir: ['dev']
 		}

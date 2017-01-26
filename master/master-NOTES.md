@@ -1,12 +1,14 @@
 ### MASTER Full Project
 # Cloned from QUB of 1/26 11:08am MST
-# Served on 8080
+# Served on 7110
 
 ##Partials:
 - √ Header - identical
 - Footer
 - Admin-Sidebar
 - Sidebar
+  - **ISSUE:** sidebar does not scroll or show the logged user at the bottom.  Use ZOOM to view.
+  - TOMA showcases
 
 ## Login
 - √ Identical
@@ -24,9 +26,15 @@
   - Submits:  http://localhost:8080/request-password.html?email=timpending%40gmail.com
 
 ## Confirm PW
+- *Changelog: Removed comma after please*
+
+## Servers:
+- *Changelog: Server.js Updated last two server JSON objects.  Berlin, US, Waiting, IP, Server Size for query test*
 
 
 ## Servers: Add
+- *Changelog: Deleted "class: blocks" from Step 2 p text block.
+
 ## Server Details
 ## Network Details
 ## Org. Marketplace
