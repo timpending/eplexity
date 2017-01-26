@@ -1,0 +1,138 @@
+@@include('partials/header.html')
+
+@@include('partials/sidebar.html')
+
+<div class="content">
+  <form action="">
+    <div class="section js-section">
+      <header class="section__header section__header--sticky js-section-header">
+        <div class="row row--flex row--flex-middle">
+          <div class="col-xs-12 col-sm-6 col-xl-6">
+            <div class="section__top mb-0">
+              <h2 class="section__heading">Add Provider Plan</h2>
+              <span class="ml-1" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<p>This server belongs to the <strong>DC00036</strong> platform. From here you can adjust the server configuration and review server performance history.</p>"><img src="images/icons/info.svg" width="16" alt=""></span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-xl-6 text-right">
+            <!--progress-square  (see progress-square.js) -->
+            <!-- for dymnamic change use update:
+            var x = document.getElementById('add-provider-plan-progress')
+                x.progressSquare.update(34)
+            -->
+            <div class="progress-square" data-percentage="30" id="add-provider-plan-progress" >
+              <p class="progress-square__text"><span class="progress-square__percentage"></span> completed</p>
+              <div class="progress-square__body">
+                <div class="progress-square__line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="section__content">
+        <!-- order list with blue counter -->
+        <ol class="order-list">
+
+          <!-- order list item begin-->
+          <li class="order-list__item">
+            <div class="order-list__header">
+              <span class="order-list__number number">5</span><h3 class="order-list__heading">Governance</h3>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-8 col-lg-8  col-xxl-4">
+                <p>Select which cloud platform you'd like this server to live on. The server will consume resources from that cloud platform.</p>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-8 col-lg-9 col-xxl-5">
+                <label>Virtual Cloud Partitions</label>
+                <div class="card card--inputs">
+                  <div class="card__header">
+                    <h5 class="card__heading">AWS Cloud Sized </h5>
+                  </div>
+                  <div class="card__content">
+                    <div class=" mb-2">
+                      <label>Available Clouds:</label>
+                      <!-- tags dropdown layout
+                         data-allowed= allowed values list will be based on them
+                         value - selected values
+                         .tags-dropdown.is-above = dropdown direction to the top
+                      -->
+                      <div class="tags-dropdown js-tags-dropdown">
+                        <input type="text"  data-allowed="DC Agent 1,DC Agent 2,DC Agent 3" value="DC Agent 1,DC Agent 2,DC Agent 3" class="form-control">
+                        <div class="tags-dropdown__content">
+                          <ul class="tags-dropdown__list"></ul>
+                          <a href="#"><strong>+ Add Firewall</strong></a>
+                        </div>
+                      </div>
+                      <!-- tags dropdown layout -->
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3 col-xs-12 mb-2-xs-down">
+                        <label>Total Instances</label>
+                        <input type="text" class="form-control" value="25" placeholder="">
+                      </div>
+                      <div class="col-sm-5 col-xs-12">
+                        <label>Total Budget,$ per month</label>
+                        <input type="text" class="form-control" value="25 000" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row mb-2">
+              <div class="col-md-8 col-lg-9  col-xxl-5">
+                <div class="card card--inputs">
+                  <div class="card__header">
+                    <h5 class="card__heading">AWS Cloud Sized </h5>
+                  </div>
+                  <div class="card__content">
+                    <div class=" mb-2">
+                      <label>Available Clouds:</label>
+                      <!-- tags dropdown layout
+                         data-allowed= allowed values list will be based on them
+                         value - selected values
+                         .tags-dropdown.is-above = dropdown direction to the top
+                      -->
+                      <div class="tags-dropdown js-tags-dropdown">
+                        <input type="text"  data-allowed="DC Agent 1,DC Agent 2,DC Agent 3" value="DC Agent 1,DC Agent 2,DC Agent 3" class="form-control">
+                        <div class="tags-dropdown__content">
+                          <ul class="tags-dropdown__list"></ul>
+                          <a href="#"><strong>+ Add Firewall</strong></a>
+                        </div>
+                      </div>
+                      <!-- tags dropdown layout -->
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3 col-xs-12 mb-2-xs-down">
+                        <label>Total Instances</label>
+                        <input type="text" class="form-control" value="25" placeholder="">
+                      </div>
+                      <div class="col-sm-5 col-xs-12">
+                        <label>Total Budget,$ per month</label>
+                        <input type="text" class="form-control" value="25 000" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- order list item end-->
+        </ol>
+
+      </div>
+
+      <footer class="section__footer flex flex--middle is-active js-section-footer">
+        <a href="add-provider-plan-4.html" class="btn btn-simple mr-1 px-2">BACK</a>
+        <a href="add-provider-plan-6.html" class="btn btn-secondary px-4">NEXT</a>
+      </footer>
+    </div>
+  </form>
+</div>
+
+@@include('partials/footer.html')

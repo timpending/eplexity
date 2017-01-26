@@ -1,0 +1,88 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="edit-nat">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Edit NAT</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="text-title">
+          Control infrastructure items in all your datacenters.
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-2">
+          <label>Name</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-2">
+          <label>Type</label>
+          <div class="select select--simple">
+            <select class="select__input form-control">
+              <option value="0">NAT</option>
+              <option value="1">NAT</option>
+              <option value="2">NAT</option>
+            </select>
+            <div class="select__button"></div>
+          </div>
+        </div>
+
+        <div class="mb-2 row">
+          <div class="col-sm-3 col-xs-12 mb-2-xs-down">
+            <label>Priority</label>
+            <input type="text" class="form-control" placeholder="500">
+          </div>
+
+          <div class="col-sm-9 col-xs-12">
+            <label>Type</label>
+            <div class="select select--simple">
+              <select class="select__input form-control">
+                <option value="0">d10plSu3</option>
+                <option value="1">d10plSu3</option>
+                <option value="2">d10plSu3</option>
+              </select>
+              <div class="select__button"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <div class="text-bold">IP Address</div>
+        </div>
+
+        <div class="mb-2 row">
+          <div class="col-sm-9 col-xs-12 mb-2-xs-down">
+            <label>Original</label>
+            <input type="text" class="form-control" placeholder="NAT">
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <label>Port</label>
+            <input type="text" class="form-control" placeholder="80">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-9 col-xs-12 mb-2-xs-down">
+            <label>Translated</label>
+            <input type="text" class="form-control" placeholder="NAT">
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <label>Port</label>
+            <input type="text" class="form-control" placeholder="80">
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-4">ADD RECORD</button>
+      </div>
+    </div>
+  </div>
+</div>

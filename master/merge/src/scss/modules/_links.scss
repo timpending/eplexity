@@ -1,0 +1,27 @@
+.link-bold {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.link-arrow {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    opacity: 0;
+    width: 9px;
+    height: 9px;
+    color: inherit;
+    transform: translate(-7px, -50%);
+    background-image: url('../images/icons/arrow-right.svg');
+    background-repeat: no-repeat;
+    transition: all .3s;
+  }
+  &:hover:after {
+    opacity: 1;
+    transform: translate(0  , -50%);
+  }
+}

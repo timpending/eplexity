@@ -1,0 +1,160 @@
+@@include('partials/header.html')
+@@include('partials/sidebar.html')
+
+  <div class="content">
+    <div class="section mb-0">
+      <header class="section__header js-section-header">
+        <div class="section__top mb-2">
+          <i class="section__icon"><img src="images/icons/speed.svg" width="30" alt=""></i>
+          <h2 class="section__heading">Dashboard</h2>
+        </div>
+
+        <div class="section__lead">
+          <p>Infrastructure means anything running on your Cloud Platforms.</p>
+        </div>
+      </header>
+
+      <div class="section__content">
+        <div class="mb-4">
+          <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+            <div class="col-xs-12 col-lg-6">
+              <div class="table-caption">
+                <h4 class="table-caption__heading">System Notices</h4>
+                <!-- input for filtering in datatable will be binded with table id must be "tableId-search" for example: openTickets-search -->
+                <span class="separator"></span>
+                <div class="input-search input-search--md ">
+                  <input type="search" class="input-search__input form-control" id="system-notices-search" placeholder="Search...">
+                  <img src="images/icons/search.svg" alt="" class="input-search__icon">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-6 text-lg-right">
+              <ul class="filter-inline">
+                <li class="filter-inline__item"><a href="#" class="filter-inline__link is-active">All</a></li>
+                <li class="filter-inline__item"><a href="#" class="filter-inline__link">Schedule Maintenances</a></li>
+                <li class="filter-inline__item"><a href="#" class="filter-inline__link">Notices</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="dataTable--table dataTable--simple" id="system-notices"></table>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <div class="row row--dashboard">
+            <div class="col">
+              <!-- dashboard card-->
+              <div class="card card--dashboard">
+                <div class="card__header">
+                  <h4 class="card__heading">Summary of Clouds</h4>
+                </div>
+                <div class="card__content">
+                  <!-- icon-count--lg for bigger size -->
+                  <div class="card__item icon-count icon-count--lg">
+                    <img src="images/icons/netcloud.svg" alt="" class="icon-count__image">
+                    <div class="icon-count__content">
+                      <h3 class="icon-count__heading">15</h3>
+                      <p class="icon-count__text">clouds</p>
+                    </div>
+                  </div>
+
+                  <div class="card__item icon-count  icon-count--lg">
+                    <img src="images/icons/x3.svg" alt="" class="icon-count__image">
+                    <div class="icon-count__content">
+                      <h3 class="icon-count__heading">299</h3>
+                      <p class="icon-count__text">Servers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //dashboard card-->
+            </div>
+            <div class="col">
+              <div class="card card--dashboard">
+                <div class="card__header">
+                  <h4 class="card__heading">Cloud Orders</h4>
+                </div>
+                <div class="card__content">
+                  <div class="card__item icon-count">
+                    <img src="images/icons/cube.svg" alt="" class="icon-count__image">
+                    <div class="icon-count__content">
+                      <h3 class="icon-count__heading">$ 2400</h3>
+                      <p class="icon-count__text">AWS</p>
+                    </div>
+                  </div>
+
+                  <div class="card__item icon-count">
+                    <img src="images/icons/vmware-logo.png" alt="" class="icon-count__image">
+                    <div class="icon-count__content">
+                      <h3 class="icon-count__heading">$5400</h3>
+                      <p class="icon-count__text">VMware</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card--dashboard">
+                <div class="card__header">
+                  <h4 class="card__heading">Marketplace Orders</h4>
+                </div>
+                <div class="card__content">
+                  <div class="card__item icon-count">
+                    <img src="images/icons/network.svg" alt="" class="icon-count__image">
+                    <div class="icon-count__content">
+                      <h3 class="icon-count__heading">$ 2400</h3>
+                      <p class="icon-count__text">Network Catalog</p>
+                    </div>
+                  </div>
+
+                  <div class="card__item icon-count">
+                    <img src="images/icons/firewall.svg" alt="" class="icon-count__image">
+                    <div class="icon-count__content">
+                      <h3 class="icon-count__heading">$ 9999</h3>
+                      <p class="icon-count__text">Security Catalog</p>
+                    </div>
+                  </div>
+
+                  <div class="card__item icon-count">
+                    <img src="images/icons/storage.svg" alt="" class="icon-count__image">
+                    <div class="icon-count__content">
+                      <h3 class="icon-count__heading">$ 1500</h3>
+                      <p class="icon-count__text">Backup Catalog</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div>
+          <div class="table-caption mb-1">
+            <h4 class="table-caption__heading">Consumption by End User</h4>
+            <!-- input for filtering in datatable will be binded with table id must be "tableId-search" for example: openTickets-search -->
+            <span class="separator"></span>
+            <div class="input-search input-search--md ">
+              <input type="search" class="input-search__input form-control" id="consumption-table-search" placeholder="Search...">
+              <img src="images/icons/search.svg" alt="" class="input-search__icon">
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="dataTable--table" id="consumption-table"></table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+@@include('partials/footer.html')

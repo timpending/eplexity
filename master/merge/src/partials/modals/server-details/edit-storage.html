@@ -1,0 +1,86 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="edit-storage">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Edit Storage</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="dataTables_content nowrap">
+          <table class="table table--sm js-edit-storage">
+            <thead>
+              <tr>
+                <th class="text-left">Storage name</th>
+                <th class="text-left">Storage Backing</th>
+                <th class="text-left">Size</th>
+                <th>Monthly Cost</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <input type="text" name="name" placeholder="Disc 1" class="form-control">
+                </td>
+                <td class="text-left">DS1</td>
+                <td>
+                  <!-- select -->
+                  <div class="select">
+                    <select name="" class="select__input form-control">
+                      <option value="">200</option>
+                      <option value="">400</option>
+                      <option value="">600</option>
+                    </select>
+                    <div class="select__button">TB </div>
+                  </div>
+                  <!-- //select -->
+                </td>
+                <td class="text-center">No Changes</td>
+                <td class="text-center">
+                  <button class="btn btn-action js-remove" data-target="tr" title="Remove"><img src="images/icons/del.svg" alt=""></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" name="name" placeholder="Disc 1" class="form-control">
+                </td>
+                <td class="text-left">DS1</td>
+                <td>
+                  <!-- select -->
+                  <div class="select">
+                    <select name="" class="select__input form-control">
+                      <option value="">200</option>
+                      <option value="">400</option>
+                      <option value="">600</option>
+                    </select>
+                    <div class="select__button">TB </div>
+                  </div>
+                  <!-- //select -->
+                </td>
+                <td class="text-center"><strong>+50 USD (250GB)</strong></td>
+                <td class="text-center">
+                  <button class="btn btn-action js-remove" data-target="tr" title="Remove"><img src="images/icons/del.svg" alt=""></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- add some template to target using template.js function; target = selector-->
+        <a href="#" class="js-add" data-tmpl="storageRow" data-target=".js-edit-storage tbody">+ Add disk</a>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-2">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

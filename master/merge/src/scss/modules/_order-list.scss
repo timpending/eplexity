@@ -1,0 +1,16 @@
+.order-list {
+  &__item {}
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__heading {
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+  &__number {margin-right: 10px;}
+}

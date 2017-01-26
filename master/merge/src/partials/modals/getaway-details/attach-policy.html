@@ -1,0 +1,37 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="attach-policy">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Attach security policy</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+          <label>Please select</label>
+          <!-- tags dropdown layout
+             data-allowed= allowed values list will be based on them
+             value - selected values
+             .tags-dropdown.is-above = dropdown direction to the top
+          -->
+          <div class="tags-dropdown js-tags-dropdown">
+            <input type="text"  data-allowed="Security policy name 1,Security policy name 2,Security policy name 3" value="Security policy name 1" class="form-control">
+            <div class="tags-dropdown__content">
+              <ul class="tags-dropdown__list"></ul>
+              <a href="#"><strong>+ Add Firewall</strong></a>
+            </div>
+          </div>
+          <!-- tags dropdown layout -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-4">ADD RECORD</button>
+      </div>
+    </div>
+  </div>
+</div>

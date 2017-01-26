@@ -1,0 +1,20 @@
+.filter-inline {
+  &__item {
+    display: inline;
+
+    & + & {margin-left: 10px;}
+  }
+
+  &__link {
+    color: $gray-base;
+    transition: color .3s;
+    &:hover {
+      color: $brand-primary;
+    }
+
+    &.is-active {
+      font-weight: 700;
+      color: $brand-primary;
+    }
+  }
+}

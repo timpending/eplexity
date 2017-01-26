@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20">
+  <defs>
+    <clipPath id="a">
+      <path d="M675 469.5l8-2.6v-11.5l-8 2.3z" fill="#fff"/>
+    </clipPath>
+    <clipPath id="b">
+      <path d="M665 466.8l8 2.7v-11.7l-8-2.3z" fill="#fff"/>
+    </clipPath>
+    <clipPath id="c">
+      <path d="M667 455.4v-2.2h.4l5.6 1.7h2l5.5-1.7c.2 0 .3 0 .4-.2v2.4zm0-4.8h14v2.3l-.5-.3-5.6-1.6h-2l-5.6 1.7h-.3zm0 2.6v-.4.4zm14-.3z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <path d="M10 19l8-2.7V5L10 7z" fill="#e1f8fe"/>
+  <path d="M675 469.5l8-2.6v-11.5l-8 2.3z" fill="none" stroke-dasharray="0" stroke="#0a8dff" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#a&quot;)" transform="translate(-665 -450.633)"/>
+  <path d="M0 16.2L8 19V7L0 5z" fill="#e1f8fe"/>
+  <path d="M665 466.8l8 2.7v-11.7l-8-2.3z" fill="none" stroke-dasharray="0" stroke="#0a8dff" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#b&quot;)" transform="translate(-665 -450.633)"/>
+  <path d="M2.4 2.6c-.5 0-.5-.4 0-.5L8 .6c.5-.2 1.4-.2 2 0L15.4 2c.5.2.5.5 0 .6L10 4.2c-.6.2-1.5.2-2 0z" fill="#e1f8fe"/>
+  <path d="M667.4 453.3c-.5-.2-.5-.4 0-.6l5.6-1.6h2l5.5 1.7c.5.2.5.4 0 .6L675 455h-2z" fill="none" stroke-dasharray="0" stroke="#198afa" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#c&quot;)" transform="translate(-665 -450.633)"/>
+</svg>

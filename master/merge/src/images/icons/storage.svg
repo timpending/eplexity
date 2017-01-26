@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
+  <defs>
+    <clipPath id="a">
+      <path d="M20 269v-6h17v6z" fill="#fff"/>
+    </clipPath>
+    <clipPath id="b">
+      <path d="M20 276v-6h17v6z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <path d="M0 6V0h17v6z" fill="#e1f8fe"/>
+  <path d="M20 269v-6h17v6z" fill="none" stroke-dasharray="0" stroke="#0a8dff" stroke-miterlimit="50" clip-path="url(&quot;#a&quot;)" transform="translate(-20 -263)"/>
+  <path d="M12 3c0-.6.4-1 1-1s1 .4 1 1-.4 1-1 1-1-.4-1-1zM2 4V2h1v2zM1 7V5.6h1V7zm14 1V6h1v2zm-2 6v-2h1v2zM3 14v-2h1v2zM4 4V2h1v2zm2 0V2h1v2z" fill="#0a8dff"/>
+  <path d="M0 13V7h17v6z" fill="#e1f8fe"/>
+  <path d="M20 276v-6h17v6z" fill="none" stroke-dasharray="0" stroke="#0a8dff" stroke-miterlimit="50" clip-path="url(&quot;#b&quot;)" transform="translate(-20 -263)"/>
+  <path d="M12 10c0-.6.4-1 1-1s1 .4 1 1-.4 1-1 1-1-.4-1-1zM2 11V9h1v2zm2 0V9h1v2zm2 0V9h1v2z" fill="#0a8dff"/>
+</svg>

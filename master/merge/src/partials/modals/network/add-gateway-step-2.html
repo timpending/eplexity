@@ -1,0 +1,73 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="addgateway-step-2">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Add A Gateway</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-2">
+          <label>Choose a Datacenter</label>
+          <div class="select select--simple">
+            <select class="select__input form-control">
+              <option value="0">CXOS-VMW-Prod</option>
+              <option value="1">CXOS-VMW-Prod</option>
+              <option value="2">CXOS-VMW-Prod</option>
+              <option value="3">CXOS-VMW-Prod</option>
+            </select>
+            <div class="select__button"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <label>Gateway Name</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-2">
+          <label>IP Address</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-2">
+          <label>Size of GW</label>
+          <div class="select select--simple">
+            <select class="select__input form-control">
+              <option value="0">Small</option>
+              <option value="1">Medium</option>
+              <option value="2">Large</option>
+            </select>
+            <div class="select__button"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <!-- tags dropdown layout
+             data-allowed= allowed values list will be based on them
+             value - selected values
+             .tags-dropdown.is-above = dropdown direction to the top
+          -->
+          <div class="tags-dropdown js-tags-dropdown">
+            <input type="text"  data-allowed="1,2" value="2" class="form-control">
+            <div class="tags-dropdown__content">
+              <ul class="tags-dropdown__list"></ul>
+              <a href="#"><strong>+ Add Firewall</strong></a>
+            </div>
+          </div>
+          <!-- tags dropdown layout -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-2" data-toggle="modal" data-target="#addgateway-step-2" >NEXT STEP</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.dashed-box {
+  display: block;
+  border: 1px dashed #aeaeae;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+  transition: all .3s ease;
+
+  &:hover {
+    border-color: $brand-primary;
+  }
+}

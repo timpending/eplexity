@@ -1,0 +1,83 @@
+// will be changed for responsive view later
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: $sidebar-width;
+  background-color: #fff;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.12);
+  z-index: 9;
+
+  @include media-breakpoint-down(md) {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all .5s ease;
+
+    .is-sidebar-open & {
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+  &__header {
+    padding: 20px ;
+    flex-shrink: 0;
+
+    @include media-breakpoint-up(lg){
+      visibility: hidden;
+    }
+  }
+
+  &__content {
+    padding-top: 40px;
+    flex-grow:1;
+  }
+
+  &__footer {
+    flex-shrink:0;
+    border-top: 1px solid rgba(#979797,.23);
+  }
+
+
+  &__close {
+    color: $text-color;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    transition: color .3s ease-out;
+
+    i {
+      margin-right: 10px;
+      margin-top: -2px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      color: $brand-danger;
+    }
+  }
+
+  &__open {
+    background-color: transparent;
+    margin-right: 10px;
+
+    @include media-breakpoint-down(md){
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      margin-right: 0;
+
+      &:before {
+        content:'';
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        top: -5px;
+        bottom: -5px;
+      }
+    }
+  }
+}

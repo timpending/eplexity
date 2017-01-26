@@ -1,0 +1,13 @@
+.container-fluid {
+  position: relative;
+}
+
+// xl for large screens
+@media (min-width: $screen-xl-min) {
+  @include make-grid(xl);
+}
+
+// xxl for large screens
+@media (min-width: $screen-xxl-min) {
+  @include make-grid(xxl);
+}

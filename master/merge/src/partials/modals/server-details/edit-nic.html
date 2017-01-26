@@ -1,0 +1,91 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="edit-nic">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Edit NIC Types</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="dataTables_content nowrap">
+          <table class="table table--xs js-edit-nic mb-2">
+            <thead>
+              <tr>
+                <th class="text-left">Virtual Network</th>
+                <th class="text-left">Adapter Type</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <!-- select  select--md (width 190px)-->
+                  <div class="select select--md">
+                    <select name="" class="select__input form-control">
+                      <option value="">vLAN2900</option>
+                      <option value="">vLAN2900</option>
+                      <option value="">vLAN2900</option>
+                    </select>
+                    <div class="select__button"></div>
+                  </div>
+                  <!-- //select -->
+                </td>
+                <td>
+                  <div class="select select--md">
+                    <select name="" class="select__input form-control">
+                      <option value="">VMXNET 3</option>
+                      <option value="">VMXNET 3</option>
+                      <option value="">VMXNET 3</option>
+                    </select>
+                    <div class="select__button"></div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn btn-action js-remove" data-target="tr" title="Remove"><img src="images/icons/del.svg" alt=""></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select select--md">
+                    <select name="" class="select__input form-control">
+                      <option value="">vLAN2900</option>
+                      <option value="">vLAN2900</option>
+                      <option value="">vLAN2900</option>
+                    </select>
+                    <div class="select__button"></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="select select--md">
+                    <select name="" class="select__input form-control">
+                      <option value="">VMXNET 3</option>
+                      <option value="">VMXNET 3</option>
+                      <option value="">VMXNET 3</option>
+                    </select>
+                    <div class="select__button"></div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn btn-action js-remove" data-target="tr" title="Remove"><img src="images/icons/del.svg" alt=""></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <!-- add some template to target using template.js function; target = selector-->
+        <a href="#" class="js-add" data-tmpl="nicRow" data-target=".js-edit-nic tbody">+ Add Network Device</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-2">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

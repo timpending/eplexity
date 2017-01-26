@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding:   20px;
+  z-index: 3;
+
+  @include media-breakpoint-down(md){
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.12);
+  }
+  @include media-breakpoint-up(lg){
+    width: $sidebar-width;
+    padding: 30px 20px;
+    z-index: 10;
+  }
+}

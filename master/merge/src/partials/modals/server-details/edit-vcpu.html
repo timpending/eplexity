@@ -1,0 +1,48 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="edit-vcpu">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10">
+            <h2 class="modal-title">Edit vCPU</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>CPU's</th>
+              <th>Total</th>
+              <th>Availables</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <!-- input number -->
+                <div class="input-number">
+                  <input type="number" value="1" name="" class="input-number__input form-control" />
+                  <div class="input-number__controls">
+                    <span class="input-number__button input-number__button--inc"></span>
+                    <span class="input-number__button input-number__button--dec"></span>
+                  </div>
+                </div>
+                <!-- //input number -->
+              </td>
+              <td class="text-center">15GHz</td>
+              <td class="text-center">10GHz</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-2">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

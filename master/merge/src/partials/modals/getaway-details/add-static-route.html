@@ -1,0 +1,51 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="add-static-route">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Add static route</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-2 row">
+          <div class="col-sm-6 col-xs-12 mb-2-xs-down">
+            <label>Network</label>
+            <input type="text" class="form-control" placeholder="123.323.21.1">
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <label>Next Hop</label>
+            <input type="text" class="form-control" placeholder="123.323.21.1">
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <label>Interface</label>
+          <div class="select select--simple">
+            <select class="select__input form-control">
+              <option value="0">Eth0</option>
+              <option value="1">Eth0</option>
+              <option value="2">Eth0</option>
+            </select>
+            <div class="select__button"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <label>Description</label>
+          <textarea rows="5" class="form-control"></textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-4">ADD RECORD</button>
+      </div>
+    </div>
+  </div>
+</div>

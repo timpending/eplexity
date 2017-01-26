@@ -1,0 +1,90 @@
+@@include('partials/header.html')
+
+@@include('partials/sidebar.html')
+
+<div class="content">
+  <form action="">
+    <div class="section js-section">
+      <header class="section__header section__header--sticky js-section-header">
+        <div class="row row--flex row--flex-middle">
+          <div class="col-xs-12 col-sm-6 col-xl-6">
+            <div class="section__top mb-0">
+              <h2 class="section__heading">Add Provider Plan</h2>
+              <span class="ml-1" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<p>This server belongs to the <strong>DC00036</strong> platform. From here you can adjust the server configuration and review server performance history.</p>"><img src="images/icons/info.svg" width="16" alt=""></span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-xl-6 text-right">
+            <!--progress-square  (see progress-square.js) -->
+            <!-- for dymnamic change use update:
+            var x = document.getElementById('add-progress')
+                x.progressSquare.update(34)
+            -->
+            <div class="progress-square" id="add-progress" data-percentage="20">
+              <p class="progress-square__text"><span class="progress-square__percentage">0%</span> completed</p>
+              <div class="progress-square__body">
+                <div class="progress-square__line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <div class="section__content">
+        <!-- order list with blue counter -->
+        <ol class="order-list">
+
+          <!-- order list item begin-->
+          <li class="order-list__item">
+            <div class="order-list__header">
+              <span class="order-list__number number">4</span><h3 class="order-list__heading">Choose Provider Backing: Network</h3>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-xs-8 col-xxl-6">
+                <p>This will determinate how mush of the cloud platform this server lives on will consume. If you choose a server that's larger than the cloud platform it lives on, we'll bump up the size of your cloud platform to handle it.</p>
+              </div>
+            </div>
+
+            <div class="mb-2 row">
+              <div class="col-sm-6 col-xxl-4 mb-2-xs-down">
+                <label>Provider Network Backing</label>
+                <div class="select select--simple">
+                  <select class="select__input form-control">
+                    <option value="0">AWS Cloud Sized</option>
+                    <option value="1">AWS Cloud Sized</option>
+                    <option value="2">AWS Cloud Sized</option>
+                  </select>
+                  <div class="select__button"></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xxl-2">
+                <label>VPC 1</label>
+                <div class="select select--simple">
+                  <select class="select__input form-control">
+                    <option value="0">VPC 1</option>
+                    <option value="1">VPC 2</option>
+                    <option value="2">VPC 3</option>
+                  </select>
+                  <div class="select__button"></div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#"><strong>+ Add another Network</strong></a>
+
+          </li>
+          <!-- order list item end-->
+        </ol>
+
+      </div>
+
+      <footer class="section__footer flex flex--middle is-active js-section-footer">
+        <a href="add-provider-plan-3.html" class="btn btn-simple mr-1 px-2">BACK</a>
+        <a href="add-provider-plan-5.html" class="btn btn-secondary px-4">NEXT</a>
+      </footer>
+    </div>
+  </form>
+</div>
+
+@@include('partials/footer.html')

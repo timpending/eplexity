@@ -1,0 +1,54 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="add-ticket">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Add ticket</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <div class="mb-2">
+          <label>Select Impact</label>
+          <div class="select select--simple">
+            <select name="" class="select__input form-control">
+              <option value="3">Trivial</option>
+              <option value="1">Minor</option>
+              <option value="0">Major</option>
+              <option value="2">Critical</option>
+            </select>
+            <div class="select__button"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label">What Cloud Is this regarding?</label>
+          <div class="select select--simple">
+            <select name="" class="select__input form-control">
+              <option value="0">My Cloud 1</option>
+              <option value="1">Web Server 2 / abc.com</option>
+              <option value="2">Web Server 3 / abc.com</option>
+              <option value="3">Web Server 4 / abc.com</option>
+            </select>
+            <div class="select__button"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label">Subject </label>
+          <textarea name="" rows="3"  class="form-control mb-1" placeholder="">I need to reset the password of the server. It is currently not working! Help!</textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-3">Create</button>
+      </div>
+    </div>
+  </div>
+</div>

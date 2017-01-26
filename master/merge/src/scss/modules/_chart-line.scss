@@ -1,0 +1,43 @@
+.chart-line {
+  padding: 20px ;
+
+  &__value {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  &__line {
+    position: relative;
+    height: 8px;
+    background-color: #ebebeb;
+    border-radius: 100px;
+    margin: 10px 0;
+  }
+
+  &__active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 100px;
+    background: $brand-primary;
+    transition: width .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &--inline {
+    padding: 0;
+    display: inline-block;
+    white-space: nowrap;
+
+    .chart-line__line {
+      margin: 0;
+      width: 70px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

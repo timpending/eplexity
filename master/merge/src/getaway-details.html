@@ -1,0 +1,345 @@
+@@include('partials/header.html') @@include('partials/sidebar.html')
+
+<div class="content">
+  <div class="section mb-0">
+    <header class="section__header js-section-header pb-0">
+      <div class="row  mb-4">
+        <div class="col-xs-12 col-sm-6 col-xl-6">
+          <div class="section__top mb-2">
+            <a href="network.html" class="section__icon section__icon--back grayscale"><img src="images/icons/clarr.svg" width="30" alt=""></a>
+            <h2 class="section__heading">Gateway 1</h2>
+            <span class="ml-1" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<p>This server belongs to the <strong>DC00036</strong> platform. From here you can adjust the server configuration and review server performance history.</p>"><img src="images/icons/info.svg" width="16" alt=""></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav tabs  .active class for active  section link -->
+      <!-- class nav-tabs--noline removed border bottom -->
+      <ul class="nav nav-tabs nav-tabs--noline" role="tablist">
+        <li role="presentation" class="active"><a href="#gateway-specs" data-toggle="tab">Specs</a></li>
+        <li role="presentation"><a href="#gateway-rules" data-toggle="tab">RUles</a></li>
+        <li role="presentation"><a href="#gateway-monitoring" data-toggle="tab">Monitoring</a></li>
+      </ul>
+    </header>
+
+    <div class="section__content">
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="gateway-specs">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-xxl-4 mb-2">
+              <table class="dataTable--table mb-2">
+                <thead>
+                  <tr>
+                    <th>Address Type</th>
+                    <th>Address</th>
+                    <th class="text-xs-right">Actions</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="text-bold">Gateway IP</td>
+                    <td class="text-bold">54.93.182.207</td>
+                    <td class="text-xs-right">
+                      <div class="btn-group">
+                        <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                        <ul class="dropdown-menu dropdown-menu--secondary">
+                          <li><a href="#" data-toggle="modal" data-target="#edit-address">EDIT</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="dataTable--table">
+                <thead>
+                  <tr>
+                    <th>Virtual Networks</th>
+                    <th class="text-xs-right">Actions</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="text-bold">us-west-2c [172.31.0.0/20 (Maps to public IP)]</td>
+                    <td class="text-xs-right">
+                      <div class="btn-group">
+                        <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                        <ul class="dropdown-menu dropdown-menu--secondary">
+                          <li><a href="#" data-toggle="modal" data-target="#edit-virtual-networks">EDIT</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-xxl-4 mb-2">
+              <div class="card card--size card--size-horizontal">
+                <div class="card__header">
+                  <div class="flex">
+                    <div class="card__image">
+                      <img src="images/icons/x1.svg" alt="" width="34">
+                    </div>
+                    <h4 class="card__heading">Size: <strong>X1</strong></h4>
+                  </div>
+                  <div class="flex">
+                    <div class="btn-group">
+                      <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                      <ul class="dropdown-menu dropdown-menu--secondary">
+                        <li><a href="#" data-toggle="modal" data-target="#edit-spec-size">EDIT</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card__content">
+                  <div class="card__row">
+                    <p class="card__val text-bold">1</p>
+                    <p class="card__key text-light">vCPUS</p>
+                  </div>
+
+                  <div class="card__row">
+                    <p class="card__val text-bold">1 GB</p>
+                    <p class="card__key text-light">vRAM</p>
+                  </div>
+
+                  <div class="card__row">
+                    <p class="card__val text-bold">30 GB</p>
+                    <p class="card__key text-light">Storage</p>
+                  </div>
+
+                  <div class="card__row">
+                    <p class="card__val text-bold">2 TB</p>
+                    <p class="card__key text-light">Net Egress</p>
+                  </div>
+
+                  <div class="card__row">
+                    <p class="card__val text-bold">3</p>
+                    <p class="card__key text-light">Ver</p>
+                  </div>
+                </div>
+
+
+                <div class="card__footer">
+                  <h4 class="card__price">$50 </h4>
+                  <div class="text-light">  / PER MONTH</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="tab-pane" id="gateway-rules">
+
+          <div class="col-xxl-9">
+
+            <div class="mb-3">
+              <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+                <div class="col-xs-12 col-md-8">
+                  <div class="table-caption">
+                    <h4 class="table-caption__heading">Rules</h4>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4 text-right">
+                  <button type="button" class="btn btn-secondary px-2" data-toggle="modal" data-target="#add-nat">Add NAT</button>
+                </div>
+              </div>
+
+              <div class="dataTables_content nowrap">
+                <table class="dataTable--table">
+                  <thead>
+                    <tr>
+                      <th class="col-10">Name</th>
+                      <th>Type</th>
+                      <th>Priority</th>
+                      <th class="col-70">Applied To</th>
+                      <th class="text-xs-center">Actions</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="text-bold">SN1</td>
+                      <td class="text-bold">SNAT</td>
+                      <td class="text-bold">1</td>
+                      <td>d10plSu3</td>
+                      <td class="text-xs-center">
+                        <div class="btn-group">
+                          <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                          <ul class="dropdown-menu dropdown-menu--secondary">
+                            <li><a href="#" data-toggle="modal" data-target="#edit-nat">EDIT</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-bold">Temp</td>
+                      <td class="text-bold">NAT</td>
+                      <td class="text-bold">50</td>
+                      <td>d10plSu3</td>
+                      <td class="text-xs-center">
+                        <div class="btn-group">
+                          <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                          <ul class="dropdown-menu dropdown-menu--secondary">
+                            <li><a href="#" data-toggle="modal" data-target="#edit-nat">EDIT</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+                <div class="col-xs-12 col-md-8">
+                  <div class="table-caption">
+                    <h4 class="table-caption__heading">Security Policies</h4>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4 text-right">
+                  <button type="button" class="btn btn-secondary px-2" data-toggle="modal" data-target="#attach-policy">Attach Security Policy</button>
+                </div>
+              </div>
+
+              <div class="dataTables_content nowrap">
+                <table class="dataTable--table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Cloud</th>
+                      <th class="text-xs-center">Actions</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="text-bold">Security policy name</td>
+                      <td class="text-bold">That's great, I was hoping it wouldn't happen right when it did happen, but now...</td>
+                      <td class="text-bold"><img src="images/vmware.png" alt=""></td>
+                      <td class="text-xs-center">
+                        <div class="btn-group">
+                          <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                          <ul class="dropdown-menu dropdown-menu--secondary">
+                            <li><a href="#" data-toggle="modal" data-target="#edit-policy">EDIT</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-bold">Security policy name</td>
+                      <td class="text-bold">That's great, I was hoping it wouldn't happen right when it did happen, but now...</td>
+                      <td class="text-bold"><img src="images/vmware.png" alt=""></td>
+                      <td class="text-xs-center">
+                        <div class="btn-group">
+                          <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                          <ul class="dropdown-menu dropdown-menu--secondary">
+                            <li><a href="#" data-toggle="modal" data-target="#edit-policy">EDIT</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+            <div class="mb-3">
+              <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+                <div class="col-xs-12 col-md-8">
+                  <div class="table-caption">
+                    <h4 class="table-caption__heading">Static routes</h4>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4 text-right">
+                  <button type="button" class="btn btn-secondary px-2" data-toggle="modal" data-target="#add-static-route">Add STATIC ROUTE</button>
+                </div>
+              </div>
+
+              <div class="dataTables_content nowrap">
+                <table class="dataTable--table">
+                  <thead>
+                    <tr>
+                      <th class="col-60">Network</th>
+                      <th>Next Hop</th>
+                      <th>Interface</th>
+                      <th>Description</th>
+                      <th class="text-xs-center">Actions</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="text-bold">10.10.10.0/24</td>
+                      <td>192.168.1.2</td>
+                      <td>Eth0</td>
+                      <td>Any</td>
+                      <td class="text-xs-center">
+                        <div class="btn-group">
+                          <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                          <ul class="dropdown-menu dropdown-menu--secondary">
+                            <li><a href="#" data-toggle="modal" data-target="#edit-static-route">EDIT</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="gateway-monitoring">
+          <div class="chart-graph js-chart-graph" id="monitoring-chart" data-id="1" data-url="some.url">
+            <header class="chart-graph__header">
+              <h5 class="chart-graph__heading">Bandwidth</h5>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul class="filter-inline js-chart-graph-filter">
+                    <li class="filter-inline__item"><a href="#" data-type="current" class="filter-inline__link is-active">Current</a></li>
+                    <li class="filter-inline__item"><a href="#" data-type="hours" class="filter-inline__link">24 Hours</a></li>
+                    <li class="filter-inline__item"><a href="#" data-type="week" class="filter-inline__link">Week</a></li>
+                    <li class="filter-inline__item"><a href="#" data-type="month" class="filter-inline__link">Month</a></li>
+                    <li class="filter-inline__item"><a href="#" data-type="year" class="filter-inline__link">Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-6 text-right js-chart-graph-legend"></div>
+              </div>
+            </header>
+
+
+            <div class="chart-graph__content">
+              <canvas></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modals for this page -->
+@@include('partials/modals/getaway-details/edit-address.html')
+@@include('partials/modals/getaway-details/edit-virtual-networks.html')
+@@include('partials/modals/getaway-details/edit-spec-size.html')
+@@include('partials/modals/getaway-details/add-static-route.html')
+@@include('partials/modals/getaway-details/edit-static-route.html')
+@@include('partials/modals/getaway-details/attach-policy.html')
+@@include('partials/modals/getaway-details/edit-policy.html')
+@@include('partials/modals/getaway-details/add-nat.html')
+@@include('partials/modals/getaway-details/edit-nat.html')
+
+@@include('partials/footer.html')

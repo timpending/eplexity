@@ -1,0 +1,89 @@
+.tags-dropdown {
+  position: relative;
+  z-index: 2;
+
+  &:after {
+    content:'';
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    @extend %caret;
+    pointer-events: none;
+  }
+
+  &.is-dropdown-open {z-index: 3;}
+
+  &__content {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid $input-border;
+    border-top:0;
+    box-shadow : -2px 2px 3px rgba(0,0,0,.1);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+
+    .is-dropdown-open & {display: block;}
+
+    .is-above & {
+      border: 1px solid $input-border;
+      border-bottom: 0;
+      top:auto;
+      bottom: 100%;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+    overflow: auto;
+    max-height: 300px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 5px 30px;
+    cursor: pointer;
+    transition: color .3s ease;
+
+    &:hover {
+      color: darken($text-color, 10%);
+
+      &:before {opacity: .3;}
+    }
+
+    &:before {
+      @extend %fi;
+      @extend .fi-check:before;
+      position: absolute;
+      top: 50%;
+      left: 2px;
+      color: $brand-primary;
+      opacity: 0;
+      transform: translateY(-50%);
+      transition: opacity .3s ease;
+    }
+
+    &.is-selected {
+      font-weight: 700;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+
+  .bootstrap-tagsinput {
+    padding-right: 20px;
+
+    input {
+      height: 30px;
+      width: 10px!important;
+      line-height: 30px;
+      margin: 2px 2px 2px 0;
+    }
+  }
+
+}

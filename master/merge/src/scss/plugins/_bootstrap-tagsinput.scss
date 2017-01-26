@@ -1,0 +1,82 @@
+.bootstrap-tagsinput {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 3px 15px;
+  color: $text-color;
+  vertical-align: middle;
+  border-radius: 4px;
+  max-width: 100%;
+  line-height: 1;
+  cursor: text;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+  .is-dropdown-open & {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .is-above.is-dropdown-open & {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+
+  input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto !important;
+    max-width: inherit;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .tag {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    color: $gray4B;
+    background: $brand-lightblue;
+    border: 1px solid $brand-primary;
+    border-radius: 1px;
+    padding: 7px 30px 7px 10px;
+    margin:2px 2px 2px 0;
+
+    [data-role="remove"] {
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      cursor:pointer;
+      color: $brand-primary;
+      font-weight: 700;
+      font-size: 10px;
+      &:after{
+        content: "\e903";
+        padding: 0px 2px;
+        font-family: 'Eplexity';
+        speak: none;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      &:hover {
+        color: $brand-danger;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.select {
+  position: relative;
+
+  &--md {width: 190px;}
+
+  &__input {
+    padding-right: 50px;
+  }
+
+  &__button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    min-width: 35px;
+    background: $bg-secondary;
+    text-align: center;
+    font-weight: 500;
+    line-height: 36px;
+    border-left: 1px solid #d2d2d2;
+    pointer-events:none;
+    padding: 0 10px;
+
+    &:after {
+      @extend %caret;
+      content:'';
+      display: inline-block;
+      position: relative;
+      top: -2px;
+      right: -1px;
+    }
+  }
+
+  &--simple {
+    .select__button {
+      background: #fff;
+      border-left: none;
+    }
+    .select__input {
+      padding-right: 40px;
+    }
+  }
+
+  &--ingroup {
+    .select__button {
+      top: 2px;
+      background: #fff;
+      border-left: none;
+      min-width: 30px;
+      height: 35px;
+      z-index: 5;
+      &:after {
+        top: 4px;
+      }
+    }
+    .select__input {
+      padding-right: 20px;
+      width: 90px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.nav-tabs {
+  // overflow: auto;
+  white-space: nowrap;
+  @include media-breakpoint-down(sm) {
+    overflow: auto;
+  }
+
+  li {
+    margin-bottom: 0;
+    @include media-breakpoint-down(sm) {
+      display: inline-block;
+      float: none;
+    }
+  }
+}
+
+.nav-tabs--noline {
+  border: 0;
+  padding-bottom: 3px;
+}
+.nav-tabs > li > a {
+  color: $gray9B;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-right: 0;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease-out;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border: 0;
+  border-bottom: 2px solid $brand-primary;
+}
+
+
+.nav-tabs > li + li {
+  margin-left: 25px;
+}

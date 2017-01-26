@@ -1,0 +1,182 @@
+@@include('partials/header.html') @@include('partials/sidebar.html')
+
+  <div class="content">
+    <div class="section mb-0">
+      <header class="section__header js-section-header pb-0">
+        <div class="row  mb-4">
+          <div class="col-xs-12 col-sm-6 col-xl-6">
+            <div class="section__top mb-2">
+              <i class="section__icon"><img src="images/icons/network.svg" width="30" alt=""></i>
+              <h2 class="section__heading">Network</h2>
+            </div>
+
+            <div class="section__lead">
+              <p>Infrastructure means anything running on your Cloud Platforms.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav tabs  .active class for active  section link -->
+        <!-- class nav-tabs--noline removed border bottom -->
+        <ul class="nav nav-tabs nav-tabs--noline" role="tablist">
+          <li role="presentation" class="active"><a href="#dns" data-toggle="tab">DNS</a></li>
+          <li role="presentation"><a href="#gateway" data-toggle="tab">Gateway</a></li>
+          <li role="presentation"><a href="#balancer" data-toggle="tab">Load Balancer</a></li>
+          <li role="presentation"><a href="#vpn" data-toggle="tab">VPN</a></li>
+          <li role="presentation"><a href="#firewalls" data-toggle="tab">FIREWALLS</a></li>
+          <li role="presentation"><a href="#policy" data-toggle="tab">Security policy</a></li>
+        </ul>
+      </header>
+
+      <div class="section__content">
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="dns">
+            <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+              <div class="col-xs-12 col-md-8">
+                <div class="table-caption">
+                  <h4 class="table-caption__heading">Domain Name System</h4>
+                  <!-- input for filtering in datatable will be binded with table id must be "tableId-search" for example: openTickets-search -->
+                  <span class="separator"></span>
+                  <div class="input-search input-search--md ">
+                    <input type="search" class="input-search__input form-control" id="network-dns-search" placeholder="Search...">
+                    <img src="images/icons/search.svg" alt="" class="input-search__icon">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-right">
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary px-2" data-toggle="dropdown">ADD<span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu--secondary">
+                    <li><a href="#" data-toggle="modal" data-target="#dns-add-text">A</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#dns-add-text">TEXT</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-wrapper">
+              <table class="dataTable--table" id="network-dns"></table>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="gateway">
+            <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+              <div class="col-xs-12 col-md-8">
+                <div class="table-caption">
+                  <h4 class="table-caption__heading">Gateway's</h4>
+                  <span class="separator"></span>
+                  <div class="input-search input-search--md ">
+                    <input type="search" class="input-search__input form-control" id="network-getaway-search" placeholder="Search...">
+                    <img src="images/icons/search.svg" alt="" class="input-search__icon">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-right">
+                <button type="button" class="btn btn-secondary px-2" data-toggle="modal" data-target="#add-gateway">Add a gateway</button>
+              </div>
+            </div>
+
+            <!-- row-clicked class for cursor pointer ont tr in table-->
+            <table class="dataTable--table row-clicked" id="network-getaway"></table>
+          </div>
+
+          <div class="tab-pane" id="balancer">
+            <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+              <div class="col-xs-12 col-md-8">
+                <div class="table-caption">
+                  <h4 class="table-caption__heading">Load Balancers</h4>
+                  <span class="separator"></span>
+                  <div class="input-search input-search--md ">
+                    <input type="search" class="input-search__input form-control" id="network-balancer-search" placeholder="Search...">
+                    <img src="images/icons/search.svg" alt="" class="input-search__icon">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-right">
+                <button type="button" class="btn btn-secondary px-2" data-toggle="modal" data-target="#load-rule">Add Load Balancer</button>
+              </div>
+            </div>
+
+            <table class="dataTable--table" id="network-balancer"></table>
+          </div>
+
+          <div class="tab-pane" id="vpn">
+            <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+              <div class="col-xs-12 col-md-8">
+                <div class="table-caption">
+                  <h4 class="table-caption__heading">Virtual Private Networks</h4>
+                  <span class="separator"></span>
+                  <div class="input-search input-search--md ">
+                    <input type="search" class="input-search__input form-control" id="network-vpn-search" placeholder="Search...">
+                    <img src="images/icons/search.svg" alt="" class="input-search__icon">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-right">
+                <button type="button" class="btn btn-secondary px-2" data-toggle="modal" data-target="#add-vpn">Add a VPN</button>
+              </div>
+            </div>
+
+            <table class="dataTable--table" id="network-vpn"></table>
+          </div>
+
+          <div class="tab-pane" id="firewalls">
+            <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+              <div class="col-xs-12 col-md-8">
+                <div class="table-caption">
+                  <h4 class="table-caption__heading">Firewall Rules</h4>
+                  <span class="separator"></span>
+                  <div class="input-search input-search--md ">
+                    <input type="search" class="input-search__input form-control" id="network-firewalls-search" placeholder="Search...">
+                    <img src="images/icons/search.svg" alt="" class="input-search__icon">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-right">
+                <button type="button" class="btn btn-secondary px-2" data-toggle="modal" data-target="#add-firewall">Add</button>
+              </div>
+            </div>
+
+            <table class="dataTable--table" id="network-firewalls"></table>
+          </div>
+
+          <div class="tab-pane" id="policy">
+            <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+              <div class="col-xs-12 col-md-8">
+                <div class="table-caption">
+                  <h4 class="table-caption__heading">Security policy</h4>
+                  <span class="separator"></span>
+                  <div class="input-search input-search--md ">
+                    <input type="search" class="input-search__input form-control" id="network-policy-search" placeholder="Search...">
+                    <img src="images/icons/search.svg" alt="" class="input-search__icon">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-right">
+                <button type="button" class="btn btn-secondary px-2" data-toggle="modal" data-target="#add-policy">Add</button>
+              </div>
+            </div>
+
+            <table class="dataTable--table" id="network-policy"></table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modals for this page -->
+@@include('partials/modals/network/dns-add-text.html')
+@@include('partials/modals/network/add-vpn.html')
+@@include('partials/modals/network/add-firewall.html')
+@@include('partials/modals/network/add-balancer.html')
+@@include('partials/modals/network/load-balancer-rule.html')
+@@include('partials/modals/network/add-policy.html')
+@@include('partials/modals/network/add-gateway.html')
+@@include('partials/modals/network/add-gateway-step-2.html')
+
+
+
+
+@@include('partials/footer.html')

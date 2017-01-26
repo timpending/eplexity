@@ -1,0 +1,113 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="load-rule">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Add Load Balancer Rule</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-2">
+          <label>Load Balancer Name</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-2">
+          <label>Description</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-2">
+          <label>Cloud Firewall (lists what firewalls are available to apply this security policy)</label>
+
+          <!-- tags dropdown layout
+             data-allowed= allowed values list will be based on them
+             value - selected values
+             .tags-dropdown.is-above = dropdown direction to the top
+          -->
+          <div class="tags-dropdown js-tags-dropdown">
+            <input type="text"  data-allowed="Firewall 1,Firewall 2,Firewall 3,Firewall 4" value="Firewall 1,Firewall 2" class="form-control">
+            <div class="tags-dropdown__content">
+              <ul class="tags-dropdown__list"></ul>
+              <a href="#"><strong>+ Add Firewall</strong></a>
+            </div>
+          </div>
+          <!-- tags dropdown layout -->
+        </div>
+
+        <div class="mb-2">
+          <span class="text-title mr-1">Rule</span>
+          <!-- switcher data-on and data-off contain text's for checked and unckeched states-->
+          <label class="switcher">
+            <input type="checkbox" class="switcher__input">
+            <span class="switcher__state">ON</span>
+            <span class="switcher__state">OFF</span>
+            <span class="switcher__current" data-on="ON" data-off="OFF"></span>
+          </label>
+        </div>
+
+        <div class="mb-2">
+          <label>Rule name</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-2 row">
+          <div class="col-md-2 col-xs-12 mb-2-xs-down">
+            <label>Protocol</label>
+            <div class="select select--simple">
+              <select class="select__input form-control">
+                <option value="0">HTTP</option>
+                <option value="1">HTTP</option>
+                <option value="2">HTTP</option>
+                <option value="3">HTTP</option>
+              </select>
+              <div class="select__button"></div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-xs-12 mb-2-xs-down">
+            <label>Protocol</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="col-md-4 col-xs-12 mb-2-xs-down">
+            <label>Specify the Back-End Servers</label>
+            <div class="select select--simple">
+              <select class="select__input form-control">
+                <option value="0">Server 1</option>
+                <option value="1">Server 1</option>
+                <option value="2">Server 1</option>
+                <option value="3">Server 1</option>
+              </select>
+              <div class="select__button"></div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12">
+            <label>Specify the Back-End Servers</label>
+            <div class="select select--simple">
+              <select class="select__input form-control">
+                <option value="0">Server 1</option>
+                <option value="1">Server 1</option>
+                <option value="2">Server 1</option>
+                <option value="3">Server 1</option>
+              </select>
+              <div class="select__button"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-4">ADD</button>
+      </div>
+    </div>
+  </div>
+</div>

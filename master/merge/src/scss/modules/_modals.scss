@@ -1,0 +1,38 @@
+.modal {
+  &-header {
+    padding: 30px 25px 20px;
+  }
+  &-body {
+    padding: 0 25px 30px;
+  }
+  &-footer {
+    padding: 15px 25px;
+    text-align: center;
+    background-color: $bg-secondary;
+    border-radius: 0 0 4px 4px;
+  }
+
+  &-close {
+    padding: 9px;
+    background: none;
+    border: none;
+    transition: opacity .3s ease-out;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+
+  &-dialog {
+    @include media-breakpoint-up(sm) {
+      margin: 60px auto;
+    }
+  }
+
+  &-content {
+    border:0;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  }
+}

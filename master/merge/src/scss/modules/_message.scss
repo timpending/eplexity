@@ -1,0 +1,36 @@
+
+.message {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+  &:first-child {
+    margin-top: 15px;
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+
+  &--user {
+    padding-right: 45px;
+
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+    }
+
+    .message__avatar {
+      top: 15px;
+      right: 0;
+      left: auto;
+    }
+
+    .message__content {
+      text-align: right;
+    }
+  }
+}

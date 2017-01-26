@@ -1,0 +1,56 @@
+.switcher {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+  height: 30px;
+  background-color: $grayEB;
+  border-radius: 100px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 0;
+
+
+  &__input {display: none;}
+
+  &__state {
+    float: left;
+    width: 50%;
+    line-height: 30px;
+    text-align: center;
+
+    &:nth-child(2) {color: $brand-primary}
+  }
+
+  &__current {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    line-height: 30px;
+    color: #fff;
+    background-color: $brand-primary;
+    border-radius: 100px;
+    text-align: center;
+    transition: transform .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    &:before {
+      content: attr(data-on);
+    }
+
+    .switcher__input:checked ~ & {
+      transform: translateX(100%);
+
+      &:before {
+        content: attr(data-off);
+      }
+    }
+  }
+
+  &--md {
+    width: 116px;
+  }
+}

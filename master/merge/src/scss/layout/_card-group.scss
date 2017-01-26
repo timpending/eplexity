@@ -1,0 +1,13 @@
+.card-group {
+  border: 1px solid $grayE0;
+  border-radius: 2px;
+
+  & + & {margin-top: 20px;}
+
+  .card {
+    border-radius: 0;
+    border: 0;
+
+    & + .card {border-top: 1px solid rgba($grayE0, .3);}
+  }
+}

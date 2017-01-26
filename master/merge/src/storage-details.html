@@ -1,0 +1,111 @@
+@@include('partials/header.html')
+
+@@include('partials/sidebar.html')
+
+  <div class="content">
+    <div class="section mb-0">
+      <header class="section__header js-section-header pb-0">
+        <div class="row  mb-4">
+          <div class="col-xs-12 col-sm-6 col-xl-6">
+            <div class="section__top mb-2">
+              <a href="storage.html" class="section__icon section__icon--back grayscale"><img src="images/icons/clarr.svg" width="30" alt=""></a>
+              <h2 class="section__heading">Data Store Name</h2>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-xl-6 text-right">
+            <!-- switcher data-on and data-off contain text's for checked and unckeched states-->
+            <label class="switcher">
+              <input type="checkbox" class="switcher__input">
+              <span class="switcher__state">ON</span>
+              <span class="switcher__state">OFF</span>
+              <span class="switcher__current" data-on="ON" data-off="OFF"></span>
+            </label>
+
+            <div class="dropdown ml-2 ">
+              <button type="button" class="btn btn-simple  " data-toggle="dropdown">Configure <span class="caret"></span></button>
+              <ul class="dropdown-menu dropdown-menu--secondary">
+                <li><a href="#" data-toggle="modal" data-target="#rename-server">RENAME</a></li>
+                <li><a href="#">REMOVE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="section__content">
+
+        <div class="col-xxl-9">
+          <!-- <table class="dataTable--table" id="storage-details-table"></table> -->
+
+            <table id="storage-details-table" class="dataTable--table">
+              <thead>
+                  <tr>
+                      <th>File\Folder Name</th>
+                      <th>Size</th>
+                      <th>Date Modified</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="table-folder">
+                      <td><img src="images/icons/folder-main.svg" class="pr-2">File\Folder Name</td>
+                      <td>2 GB</td>
+                      <td>12-10-2017</td>
+                      <td>
+                        <div class="btn-group">
+                          <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                          <ul class="dropdown-menu dropdown-menu--secondary">
+                            <li><a href="#">RENAME</a></li>
+                            <li><a href="#">EDIT</a></li>
+                            <li><a href="#">REFRESH</a></li>
+                            <li><a href="#">REMOVE</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                  </tr>
+
+                  <tr class="table-folder table-folder--subfolder">
+                      <td><img src="images/icons/corner.svg" width="30"><img src="images/icons/folder-default.svg" class="mr-2">File\Folder Name</td>
+                      <td>2 GB</td>
+                      <td>12-10-2017</td>
+                      <td>
+                        <div class="btn-group">
+                          <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                          <ul class="dropdown-menu dropdown-menu--secondary">
+                            <li><a href="#">RENAME</a></li>
+                            <li><a href="#">EDIT</a></li>
+                            <li><a href="#">REFRESH</a></li>
+                            <li><a href="#">REMOVE</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                  </tr>
+
+                  <tr class="table-folder table-folder--subfolder">
+                      <td><img src="images/icons/corner.svg" width="30"><img src="images/icons/folder-default.svg" class="pr-2">File\Folder Name</td>
+                      <td>2 GB</td>
+                      <td>12-10-2017</td>
+                      <td>
+                        <div class="btn-group">
+                          <button class="btn btn-action dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/icons/gear.svg" alt="" /></button>
+                          <ul class="dropdown-menu dropdown-menu--secondary">
+                            <li><a href="#">RENAME</a></li>
+                            <li><a href="#">EDIT</a></li>
+                            <li><a href="#">REFRESH</a></li>
+                            <li><a href="#">REMOVE</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- modals for this page -->
+
+
+@@include('partials/footer.html')

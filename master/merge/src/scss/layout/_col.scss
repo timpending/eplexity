@@ -1,0 +1,8 @@
+.col--flex {
+  display: flex;
+  flex-direction: column;
+
+  & > div{
+    flex-grow: 1;
+  }
+}

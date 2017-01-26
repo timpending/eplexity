@@ -1,0 +1,43 @@
+.radio {
+  display: inline-block;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: $gray4B;
+  cursor: pointer;
+
+  &__input {display: none;}
+  &__icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid $text-color;
+    margin-right: 7px;
+    transition: border-color .3s ease;
+
+    .radio__input:checked + & {
+      border: 3px solid  $brand-primary;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .5;
+    transition: opacity .3s ease;
+
+    .radio__input:checked ~ & {
+      opacity: 1;
+    }
+  }
+
+  & + & {
+    margin: 0;
+    margin-left: 15px;
+  }
+
+}

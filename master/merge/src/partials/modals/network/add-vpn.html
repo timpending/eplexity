@@ -1,0 +1,120 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="add-vpn">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Add VPN</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <p class="text-title">
+          Control infrastructure items in all your datacenters.
+        </p>
+
+        <div class="mb-2">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control mb-1" placeholder="VPN-to-HQ">
+        </div>
+
+        <div class="mb-2 row">
+          <div class="col-md-6 col-xs-12">
+            <label>Choose Cloud</label>
+            <div class="select select--simple">
+              <select class="select__input form-control">
+                <option value="0">Cloud 1</option>
+                <option value="1">Cloud 2</option>
+                <option value="2">Cloud 3</option>
+                <option value="3">Cloud 4</option>
+              </select>
+              <div class="select__button"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <label>Choose Gateway</label>
+            <div class="select select--simple">
+              <select class="select__input form-control">
+                <option value="0">GW02</option>
+                <option value="1">GW03</option>
+                <option value="2">GW04</option>
+                <option value="3">GW05</option>
+              </select>
+              <div class="select__button"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <table class="table js-add-vpn">
+            <thead>
+              <tr>
+                <th class="text-left">Network</th>
+                <th class="text-left pl-0">Netmask</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="text" class="form-control" placeholder="192.168.100.0">
+                </td>
+                <td class="text-center pl-0">
+                  <input type="text" class="form-control" placeholder="255.255.255.0">
+                </td>
+                <td class="text-center">
+                  <button class="btn btn-action js-remove" data-target="tr" title="Remove"><img src="images/icons/del.svg" alt=""></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- add some template to target using template.js function; target = selector-->
+          <a href="#" class="js-add" data-tmpl="newVpnRow" data-target=".js-add-vpn tbody">+ Add Subnet</a>
+        </div>
+
+        <div class="mb-2 row">
+          <div class="col-md-6 col-xs-12 mb-2-sm-down">
+            <label>Local Peer Address</label>
+            <input type="text" class="form-control" placeholder="10.10.10.1">
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <label>Remote Peer Address</label>
+            <input type="text" class="form-control" placeholder="10.10.10.1">
+          </div>
+        </div>
+
+        <div class="mb-1 row">
+          <div class="col-md-6 col-xs-12 mb-2-sm-down">
+            <label>Encryption Protocol</label>
+            <div class="select select--simple">
+              <select class="select__input form-control">
+                <option value="0">AES-256</option>
+                <option value="1">AES-256</option>
+                <option value="2">AES-256</option>
+                <option value="3">AES-256</option>
+              </select>
+              <div class="select__button"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <label>Shared Key</label>
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-copy js-copy-clipboard" data-target="shared-key" type="button"><span>Copy</span><i class="fi-check"></i></button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-2">ADD RECORD</button>
+      </div>
+    </div>
+  </div>
+</div>

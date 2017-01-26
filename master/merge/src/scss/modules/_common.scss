@@ -1,0 +1,55 @@
+// btn group separator (gray vertical line)
+.btn-group-sep {
+  margin: 0 20px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 20px;
+  background-color: #d8d8d8;
+}
+
+.separator {
+  margin:0 15px;
+  width: 1px;
+  height: 13px;
+  border: 1px solid rgba(#979797, .5);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.notransition {
+  transition: none !important;
+}
+
+.line {
+  border-bottom: 1px solid $grayE0;
+}
+
+
+.el-inline {
+  display: inline-block;
+  vertical-align: middle;
+
+  & + & {
+    margin-left: 15px;
+  }
+}
+
+
+.grayscale {
+  @include grayscale;
+
+  &:hover {
+    @include grayscale-disable;
+  }
+}
+
+
+// Column sizes for tables
+.col-75 { width: 75%; }
+.col-70 { width: 70%; }
+.col-60 { width: 60%; }
+.col-50 { width: 50%; }
+.col-30 { width: 30%; }
+.col-10 { width: 10%; }

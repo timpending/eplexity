@@ -1,0 +1,44 @@
+.tooltip {
+  border: 1px solid $gray9B;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+
+  &.bottom {margin-top: 7px;}
+
+  &-inner {padding: 10px; }
+  &-inner::before {display: none;}
+  &-inner::after {
+    content:'';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: #fff;
+    border-left: 1px solid $gray9B;
+    border-top: 1px solid $gray9B;
+
+    .top & {
+      bottom: -3px;
+      left: 50%;
+      margin-left: -2.5px;
+      transform: rotate(-135deg);
+    }
+    .bottom & {
+      top: -3px;
+      left: 50%;
+      margin-left: -2.5px;
+      transform: rotate(45deg);
+    }
+    .left & {
+      top: 50%;
+      margin-top: -2.5px;
+      right: -3px;
+      transform: rotate(135deg);
+    }
+    .right & {
+      top: 50%;
+      margin-top: -2.5px;
+      left: -3px;
+      transform: rotate(-45deg);
+    }
+  }
+}

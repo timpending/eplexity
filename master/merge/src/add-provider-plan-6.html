@@ -1,0 +1,84 @@
+@@include('partials/header.html')
+
+@@include('partials/sidebar.html')
+
+<div class="content">
+  <form action="">
+    <div class="section js-section">
+      <header class="section__header section__header--sticky js-section-header">
+        <div class="row row--flex row--flex-middle">
+          <div class="col-xs-12 col-sm-6 col-xl-6">
+            <div class="section__top mb-0">
+              <h2 class="section__heading">Add Provider Plan</h2>
+              <span class="ml-1" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<p>This server belongs to the <strong>DC00036</strong> platform. From here you can adjust the server configuration and review server performance history.</p>"><img src="images/icons/info.svg" width="16" alt=""></span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-xl-6 text-right">
+            <!--progress-square  (see progress-square.js) -->
+            <!-- for dymnamic change use update:
+            var x = document.getElementById('add-progress')
+                x.progressSquare.update(34)
+            -->
+            <div class="progress-square" id="add-progress" data-percentage="20">
+              <p class="progress-square__text"><span class="progress-square__percentage">0%</span> completed</p>
+              <div class="progress-square__body">
+                <div class="progress-square__line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="section__content">
+        <!-- order list with blue counter -->
+        <ol class="order-list">
+
+          <!-- order list item begin-->
+          <li class="order-list__item">
+            <div class="order-list__header">
+              <span class="order-list__number number">6</span><h3 class="order-list__heading">Associate Organization</h3>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-6 col-xxl-3">
+                <p>Select which cloud platform you'd like this server to live on. The server will consume resources from that cloud platform.</p>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-6 col-xxl-3">
+                <label>Associate organization</label>
+                <div class="select select--simple">
+                  <select class="select__input form-control">
+                    <option value="0">ABC Corp 1</option>
+                    <option value="1">ABC Corp 2</option>
+                    <option value="2">ABC Corp 3</option>
+                  </select>
+                  <div class="select__button"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-md-6 col-xxl-3">
+                <label>Description</label>
+                <textarea name="" rows="3" class="form-control">My provider plan for organization ABC Corp 1</textarea>
+              </div>
+            </div>
+
+            <a href="#"><strong>+ Add oranization</strong></a>
+
+          </li>
+          <!-- order list item end-->
+        </ol>
+
+      </div>
+
+      <footer class="section__footer flex flex--middle is-active js-section-footer">
+        <a href="add-provider-plan-5.html" class="btn btn-simple mr-1 px-4">BACK</a>
+        <a href="add-provider-plan-7.html" class="btn btn-secondary px-4">NEXT</a>
+      </footer>
+    </div>
+  </form>
+</div>
+
+@@include('partials/footer.html')

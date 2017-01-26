@@ -1,0 +1,38 @@
+// user profile in sidebar
+.user {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px 20px 20px;
+
+
+  &__avatar {
+    width: 34px;
+    height: 34px;
+  }
+
+  &__desc {
+    padding-left: 20px;
+    flex-grow: 1;
+  }
+
+  &__name {
+    color: #4a4a4a;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    line-height: 14px;
+  }
+
+  &__role {
+    color: #9b9b9b;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  &__caret {
+    color:$brand-primary;
+  }
+}

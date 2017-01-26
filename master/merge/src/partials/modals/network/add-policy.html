@@ -1,0 +1,195 @@
+<div class="modal fade " tabindex="-1" role="dialog" id="add-policy">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Add Security Policy</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-2">
+          <label>Security Group Name</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-2">
+          <label>Description</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-2">
+          <label>Cloud firewall</label>
+          <div class="tags-dropdown js-tags-dropdown">
+            <input type="text"  data-allowed="Firewall 1,Firewall 2,Firewall 3,Firewall 4" value="Firewall 1,Firewall 2" class="form-control">
+            <div class="tags-dropdown__content">
+              <ul class="tags-dropdown__list">
+              </ul>
+              <a href="#"><strong>+ Add Firewall</strong></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <span class="text-title mr-1">Rule</span>
+          <!-- switcher data-on and data-off contain text's for checked and unckeched states-->
+          <label class="switcher">
+            <input type="checkbox" class="switcher__input">
+            <span class="switcher__state">ON</span>
+            <span class="switcher__state">OFF</span>
+            <span class="switcher__current" data-on="ON" data-off="OFF"></span>
+          </label>
+        </div>
+
+        <div class="mb-2">
+          <!-- Nav tabs  .active class for active  section link -->
+          <!-- class nav-tabs--noline removed border bottom -->
+          <div class="mb-2 col-md-6 col-xs-12">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#inbound" data-toggle="tab">INBOUND</a></li>
+              <li role="presentation"><a href="#outbound" data-toggle="tab">OUTBOUND</a></li>
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="inbound">
+              <div class="dataTables_content nowrap">
+                <table class="table table--sm js-new-policy-1">
+                  <thead>
+                    <tr>
+                      <th class="text-left">Type</th>
+                      <th class="text-left">Protocol</th>
+                      <th class="text-left">Port Range</th>
+                      <th class="text-left">Destination</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td style="width: 20%;">
+                        <!-- select -->
+                        <div class="select select--simple">
+                          <select name="" class="select__input form-control">
+                            <option value="">SSH</option>
+                            <option value="">SSH</option>
+                            <option value="">SSH</option>
+                          </select>
+                          <div class="select__button"></div>
+                        </div>
+                        <!-- //select -->
+                      </td>
+
+                      <td class="text-left">
+                        <input type="text" class="form-control" placeholder="all">
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="0-65553">
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <!-- select -->
+                            <div class="select select--ingroup">
+                              <select name="" class="select__input form-control">
+                                <option value="">SSH</option>
+                                <option value="">SSH</option>
+                                <option value="">SSH</option>
+                              </select>
+                              <div class="select__button"></div>
+                            </div>
+                            <!-- //select -->
+                          </div>
+                          <input type="text" class="form-control" aria-label="..." placeholder="0.0.0.0/0">
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-action js-remove" data-target="tr" title="Remove"><img src="images/icons/del.svg" alt=""></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- add some template to target using template.js function; target = selector-->
+              <a href="#" class="js-add" data-tmpl="newPolicyRow" data-target=".js-new-policy-1 tbody">+ Add Rule</a>
+            </div>
+
+            <div class="tab-pane" id="outbound">
+              <div class="dataTables_content nowrap">
+                <table class="table table--sm js-new-policy-2">
+                  <thead>
+                    <tr>
+                      <th class="text-left">Type</th>
+                      <th class="text-left">Protocol</th>
+                      <th class="text-left">Port Range</th>
+                      <th class="text-left">Destination</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td style="width: 20%;">
+                        <!-- select -->
+                        <div class="select select--simple">
+                          <select name="" class="select__input form-control">
+                            <option value="">SSH</option>
+                            <option value="">SSH</option>
+                            <option value="">SSH</option>
+                          </select>
+                          <div class="select__button"></div>
+                        </div>
+                        <!-- //select -->
+                      </td>
+                      <td class="text-left">
+                        <input type="text" class="form-control" placeholder="all">
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="0-65553">
+                      </td>
+                      <td>
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <!-- select -->
+                            <div class="select select--ingroup">
+                              <select name="" class="select__input form-control">
+                                <option value="">SSH</option>
+                                <option value="">SSH</option>
+                                <option value="">SSH</option>
+                              </select>
+                              <div class="select__button"></div>
+                            </div>
+                            <!-- //select -->
+                          </div>
+                          <input type="text" class="form-control" aria-label="..." placeholder="0.0.0.0/0">
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <button class="btn btn-action js-remove" data-target="tr" title="Remove"><img src="images/icons/del.svg" alt=""></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <!-- add some template to target using template.js function; target = selector-->
+              <a href="#" class="js-add" data-tmpl="newPolicyRow" data-target=".js-new-policy-2 tbody">+ Add Rule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-4">ADD</button>
+      </div>
+    </div>
+  </div>
+</div>

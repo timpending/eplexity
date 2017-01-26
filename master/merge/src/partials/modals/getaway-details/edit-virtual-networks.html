@@ -1,0 +1,62 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="edit-virtual-networks">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-xs-10 ">
+            <h2 class="modal-title">Edit Virtual Networks</h2>
+          </div>
+          <div class="col-xs-2 text-right">
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <table class="table js-add-virtual-network">
+          <tbody>
+            <tr>
+              <td class="text-center pl-0">
+                <div class="select select--simple">
+                  <select class="select__input form-control">
+                    <option value="0">us-west-2c [172.31.0.0/20 (Maps to public IP)]</option>
+                    <option value="1">us-west-2c [172.31.0.0/20 (Maps to public IP)]</option>
+                    <option value="2">us-west-2c [172.31.0.0/20 (Maps to public IP)]</option>
+                  </select>
+                  <div class="select__button"></div>
+                </div>
+              </td>
+              <td class="text-center">
+                <button class="btn btn-action js-remove" data-target="tr" title="Remove"><img src="images/icons/del.svg" alt=""></button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="text-center pl-0">
+                <div class="select select--simple">
+                  <select class="select__input form-control">
+                    <option value="0">us-west-2c [172.31.0.0/20 (Maps to public IP)]</option>
+                    <option value="1">us-west-2c [172.31.0.0/20 (Maps to public IP)]</option>
+                    <option value="2">us-west-2c [172.31.0.0/20 (Maps to public IP)]</option>
+                  </select>
+                  <div class="select__button"></div>
+                </div>
+              </td>
+              <td class="text-center">
+                <button class="btn btn-action js-remove" data-target="tr" title="Remove"><img src="images/icons/del.svg" alt=""></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- add some template to target using template.js function; target = selector-->
+        <a href="#" class="js-add" data-tmpl="newVirtualNetworkRow" data-target=".js-add-virtual-network tbody">+ Add a network</a>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default px-3" data-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-secondary px-4">ADD RECORD</button>
+      </div>
+    </div>
+  </div>
+</div>

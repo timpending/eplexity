@@ -1,0 +1,699 @@
+@@include('partials/header.html')
+
+@@include('partials/sidebar.html')
+
+  <div class="content">
+    <div class="section mb-0">
+      <header class="section__header js-section-header pb-0">
+        <div class="row  mb-4">
+          <div class="col-xs-12 col-sm-6 col-xl-6">
+            <div class="section__top mb-2">
+              <a href="#" class="section__icon section__icon--back grayscale"><img src="images/icons/clarr.svg" width="30" alt=""></a>
+              <h2 class="section__heading">Indra's Test Server</h2>
+              <span class="ml-1" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<p>This server belongs to the <strong>DC00036</strong> platform. From here you can adjust the server configuration and review server performance history.</p>"><img src="images/icons/info.svg" width="16" alt=""></span>
+            </div>
+
+            <div class="section__lead">
+              <p>This server belongs to the DC00036 platform. From here you can adjust the server configuration and review server performance history.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-xl-6 ">
+            <div class="section__tools text-sm-right mt-0-sm">
+              <!-- switcher data-on and data-off contain text's for checked and unckeched states-->
+              <label class="switcher">
+                <input type="checkbox" class="switcher__input">
+                <span class="switcher__state">ON</span>
+                <span class="switcher__state">OFF</span>
+                <span class="switcher__current" data-on="ON" data-off="OFF"></span>
+              </label>
+
+              <div class="dropdown ml-2 ">
+                <button type="button" class="btn btn-simple  " data-toggle="dropdown">Configure <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu--secondary">
+                  <li><a href="#" data-toggle="modal" data-target="#rename-server">RENAME</a></li>
+                  <li><a href="#">REMOVE</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav tabs  .active class for active  section link -->
+        <!-- class nav-tabs--noline removed border bottom -->
+        <ul class="nav nav-tabs nav-tabs--noline" role="tablist">
+          <li role="presentation" class="active"><a href="#access" data-toggle="tab">Access</a></li>
+          <li role="presentation"><a href="#specs"  data-toggle="tab">Specs</a></li>
+          <li role="presentation"><a href="#tickets" data-toggle="tab">Tickets</a></li>
+          <li role="presentation"><a href="#monitoring" data-toggle="tab">Monitoring</a></li>
+          <li role="presentation"><a href="#history" data-toggle="tab">History</a></li>
+          <li role="presentation"><a href="#backups" data-toggle="tab">Backups</a></li>
+        </ul>
+      </header>
+
+      <div class="section__content">
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="access">
+            <div class="row">
+              <div class="col-md-6 col-xxl-4 mb-2-sm-down">
+
+                <div class="card-group">
+                  <div class="card card--desc">
+                    <div class="card__image">
+                      <img src="images/icons/speed.svg" width="17" alt="">
+                    </div>
+                    <div class="row card__row">
+                      <div class="col-xs-6">
+                        <p class="text-title">Status</p>
+                      </div>
+                      <div class="col-xs-6 text-right"><span class="status status--active">ACTIVE</span></div>
+                      <div class="col-xs-12 pt-half">
+                        <p class="text-small">Whether the server is active, or in standby mode.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card card--desc">
+                    <div class="card__image">
+                      <img src="images/icons/world.svg" width="17" alt="">
+                    </div>
+                    <div class="row card__row">
+                      <div class="col-xs-6">
+                        <p class="text-title">Public IP</p>
+                      </div>
+                      <div class="col-xs-6 text-right"><span class="text-bold">54.93.182.207</span></div>
+                      <div class="col-xs-12 pt-half">
+                        <p class="text-small">Whether the server is active, or in standby mode.</p>
+                      </div>
+                    </div>
+                    <div class="row card__row">
+                      <div class="col-xs-6">
+                        <p class="text-title">Public DNS</p>
+                      </div>
+                      <div class="col-xs-6 text-right"><span class="text-bold">54.93.182.207</span></div>
+                      <div class="col-xs-12 pt-half">
+                        <p class="text-small">Used for accessing the server from a web browser.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card card--desc">
+                    <div class="card__image">
+                      <img src="images/icons/lock.svg" width="17" alt="">
+                    </div>
+                    <div class="row card__row">
+                      <div class="col-xs-6">
+                        <p class="text-title">Private IP</p>
+                      </div>
+                      <div class="col-xs-6 text-right"><span class="text-bold">54.93.182.207</span></div>
+                      <div class="col-xs-12 pt-half">
+                        <p class="text-small">Whether the server is active, or in standby mode.</p>
+                      </div>
+                    </div>
+                    <div class="row card__row">
+                      <div class="col-xs-6">
+                        <p class="text-title">Private DNS</p>
+                      </div>
+                      <div class="col-xs-6 text-right"><span class="text-bold">54.93.182.207</span></div>
+                      <div class="col-xs-12 pt-half">
+                        <p class="text-small">Used for accessing the server from a web browser.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-6   col-xxl-4">
+                <div class="card-group">
+                  <div class="card card--desc">
+                    <div class="card__image">
+                      <img src="images/icons/user.svg" width="14" alt="">
+                    </div>
+                    <div class="row card__row">
+                      <div class="col-xs-6">
+                        <p class="text-title">Username</p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p class="text-bold">indra51</p>
+                      </div>
+                      <div class="col-xs-12 pt-half">
+                        <p class="text-small">Whether the server is active, or in standby mode.</p>
+                      </div>
+                    </div>
+                    <div class="row card__row">
+                      <div class="col-xs-6">
+                        <p class="text-title">Password</p>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <p class="text-bold">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</p>
+                      </div>
+                      <div class="col-xs-12 pt-half">
+                        <p class="text-small">Used for accessing the server from a web browser.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card card--desc card--desc-inline">
+                    <div class="card__image">
+                      <img src="images/icons/key.svg" width="20" alt="">
+                    </div>
+                    <div class="row card__row">
+                      <div class="col-xs-5">
+                        <p class="text-title">Private Key</p>
+                      </div>
+                      <div class="col-xs-7 text-right">
+                        <a href="#" class="btn btn-simple"><img src="images/icons/download.svg" width="13" alt="" class="mr-1"> Download</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-group">
+                  <div class="card card--desc">
+                    <div class="card__image">
+                      <img src="images/icons/console.svg" width="21" alt="">
+                    </div>
+                    <div class="row card__row">
+                      <div class="col-xs-12">
+                        <p class="text-title">Console access</p>
+                      </div>
+                      <div class="col-xs-12 pt-half">
+                        <p class="text-small">This will open up a concole VNC connection to server.</p>
+                      </div>
+                      <div class="col-xs-12 pt-2">
+                        <button class="btn btn-simple btn-block">Launch console</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="specs">
+            <div class="row ">
+              <div class="col-xs-12  col-md-6 col-xxl-4  mb-2-xs mb-0-md ">
+                <div class="card card--action">
+                  <div class="card__header">
+                    <div class="row row--flex row--flex-middle">
+                      <div class="col-xs-10">
+                        <h4 class="card__heading">Storage</h4>
+                      </div>
+                      <div class="col-xs-2 text-right">
+                        <button class="btn btn-action" data-toggle="modal" data-target="#edit-storage"><img src="images/icons/gear.svg" alt="" /></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <!-- chart circle -->
+                    <div class="chart-circle" data-max="200" data-used="40">
+                      <div class="row row--flex row--flex-middle">
+                        <div class="col-xs-5">
+                          <div class="chart-circle__wrap">
+                            <svg  viewBox="0 0 40 40" class="chart-circle__svg">
+                              <circle class="chart-circle__circle"  r="15.92" cx="20" cy="20"></circle>
+                              <circle class="chart-circle__active" r="15.92" cx="20" cy="20"  stroke-dashoffset="100"></circle>
+                            </svg>
+
+                            <div class="chart-circle__header">
+                              <p class="text-small mb-0">Capacity</p>
+                              <p class="text-bold"><span class="js-chartcircle-max">200</span>TB</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-7 legend">
+                          <div class="row row--flex row--flex-middle mb-1">
+                            <div class="col-xs-7 text-title legend__item"><span class="legend__dot" style="border-color: #0a8dff; "></span> Used</div>
+                            <div class="col-xs-5 text-bold text-right"><span class="js-chartcircle-used">180</span> TB</div>
+                          </div>
+                          <div class="row row--flex row--flex-middle">
+                            <div class="col-xs-7 text-title legend__item"><span class="legend__dot" style="border-color: #ebebeb; "></span> Available</div>
+                            <div class="col-xs-5 text-bold text-right"><span class="js-chartcircle-available">20</span> TB</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- chart circle -->
+
+                    <div class="chart-line" data-max="2000" data-used="600">
+                      <div class="row">
+                        <div class="col-xs-8"><p class="text-black">IOPs</p></div>
+                        <div class="col-xs-4 text-right"><p class="text-black"><span class="js-chartline-max">2000</span></p></div>
+                      </div>
+                      <div class="chart-line__line">
+                        <div class="chart-line__active"></div>
+                      </div>
+                      <p class="text-small"><span class="js-chartline-used">150</span> used </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12  col-md-6 col-xxl-4 ">
+                <div class="card card--action ">
+                  <div class="card__header">
+                    <div class="row row--flex row--flex-middle">
+                      <div class="col-xs-10">
+                        <h4 class="card__heading">vRAM</h4>
+                      </div>
+                      <div class="col-xs-2 text-right">
+                        <button class="btn btn-action" data-toggle="modal" data-target="#edit-vram"><img src="images/icons/gear.svg" alt="" /></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="chart-line" data-max="2000" data-used="150">
+                      <div class="row">
+                        <div class="col-xs-8"><p class="text-black">Capacity</p></div>
+                        <div class="col-xs-4 text-right"><p class="text-black"><span class="js-chartline-max">2000</span></p></div>
+                      </div>
+                      <div class="chart-line__line">
+                        <div class="chart-line__active"></div>
+                      </div>
+                      <p class="text-small"><span class="js-chartline-used">150</span>GB used</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card--action">
+                  <div class="card__header">
+                    <div class="row row--flex row--flex-middle">
+                      <div class="col-xs-10">
+                        <h4 class="card__heading">vCPU</h4>
+                      </div>
+                      <div class="col-xs-2 text-right">
+                        <button class="btn btn-action" data-toggle="modal" data-target="#edit-vcpu"><img src="images/icons/gear.svg" alt="" /></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="chart-line" data-max="2000" data-used="600">
+                      <div class="row">
+                        <div class="col-xs-8"><p class="text-black">3xCPUs</p></div>
+                        <div class="col-xs-4 text-right"><p class="text-black"><span class="js-chartline-max">15</span> GHz</p></div>
+                      </div>
+                      <div class="chart-line__line">
+                        <div class="chart-line__active"></div>
+                      </div>
+                      <p class="text-small"><span class="js-chartline-used">10</span>GHz used</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-xxl-4  mt-2-xs mt-0-xxl">
+                <div class="card card--action">
+                  <div class="card__header">
+                    <div class="row row--flex row--flex-middle">
+                      <div class="col-xs-10">
+                        <h4 class="card__heading">NICs</h4>
+                      </div>
+                      <div class="col-xs-2 text-right">
+                        <button class="btn btn-action" data-toggle="modal" data-target="#edit-nic"><img src="images/icons/gear.svg" alt="" /></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__inner">
+                      <div class="row">
+                        <div class="col-xs-6"><span class="text-small">Name</span></div>
+                        <div class="col-xs-6 text-right"><span class="text-small">IP</span></div>
+                      </div>
+                      <div class="card__row">
+                        <div class="row">
+                          <div class="col-xs-6"><p class="text-title">VLAN 2900</p></div>
+                          <div class="col-xs-6 text-right"><p class="text-bold">192.168.100.1</p></div>
+                        </div>
+                      </div>
+                      <div class="card__row">
+                        <div class="row">
+                          <div class="col-xs-6"><p class="text-title">VLAN 2900</p></div>
+                          <div class="col-xs-6 text-right"><p class="text-bold">192.168.100.1</p></div>
+                        </div>
+                      </div>
+                      <div class="card__row">
+                        <div class="row">
+                          <div class="col-xs-6"><p class="text-title">VLAN 2900</p></div>
+                          <div class="col-xs-6 text-right"><p class="text-bold">192.168.100.1</p></div>
+                        </div>
+                      </div>
+                      <div class="card__row">
+                        <div class="row">
+                          <div class="col-xs-6"><p class="text-title">VLAN 2900</p></div>
+                          <div class="col-xs-6 text-right"><p class="text-bold">192.168.100.1</p></div>
+                        </div>
+                      </div>
+                      <div class="card__row">
+                        <div class="row">
+                          <div class="col-xs-6"><p class="text-title">VLAN 2900</p></div>
+                          <div class="col-xs-6 text-right"><p class="text-bold">192.168.100.1</p></div>
+                        </div>
+                      </div>
+                      <div class="card__row">
+                        <div class="row">
+                          <div class="col-xs-6"><p class="text-title">VLAN 2900</p></div>
+                          <div class="col-xs-6 text-right"><p class="text-bold">192.168.100.1</p></div>
+                        </div>
+                      </div>
+                      <div class="card__row">
+                        <div class="row">
+                          <div class="col-xs-6"><p class="text-title">VLAN 2900</p></div>
+                          <div class="col-xs-6 text-right"><p class="text-bold">192.168.100.1</p></div>
+                        </div>
+                      </div>
+                      <a href="#" class="card__expand js-card-expand">View all 6 NICs</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tickets">
+            <div class="tickets">
+              <!-- Tickets Sidebar-->
+              <aside class="tickets__sidebar">
+                <div class="tickets__header">
+                  <h4 class="tickets__title">Tickets</h4>
+                  <a href="#" class="tickets__new">Create TICKET</a>
+                </div>
+
+                <section class="tickets__list">
+                  <div class="tickets__scroll">
+                    <article class="ticket is-new">
+                      <div class="ticket__header row">
+                        <div class="col-xs-6">
+                          <div class="ticket__id"><strong>ID 1234</strong></div>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          <span class="status status--active">ACTIVE ONLY</span>
+                        </div>
+                      </div>
+                      <p>Scheduled Maintenance on 24/12/2015</p>
+                    </article>
+
+                    <article class="ticket">
+                      <div class="ticket__header row">
+                        <div class="col-xs-6">
+                          <div class="ticket__id"><strong>ID 1234</strong></div>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          <span class="status status--active">ACTIVE ONLY</span>
+                        </div>
+                      </div>
+                      <p>Scheduled Maintenance on 24/12/2015</p>
+                    </article>
+
+                    <article class="ticket">
+                      <div class="ticket__header row">
+                        <div class="col-xs-6">
+                          <div class="ticket__id"><strong>ID 1234</strong></div>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          <span class="status status--active">ACTIVE ONLY</span>
+                        </div>
+                      </div>
+                      <p>Scheduled Maintenance on 24/12/2015</p>
+                    </article>
+
+                    <article class="ticket is-active">
+                      <div class="ticket__header row">
+                        <div class="col-xs-6">
+                          <div class="ticket__id"><strong>ID 1234</strong></div>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          <span class="status status--active">ACTIVE ONLY</span>
+                        </div>
+                      </div>
+                      <p>Scheduled Maintenance on 24/12/2015</p>
+                    </article>
+
+                    <article class="ticket">
+                      <div class="ticket__header row">
+                        <div class="col-xs-6">
+                          <div class="ticket__id"><strong>ID 1234</strong></div>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          <span class="status status--active">ACTIVE ONLY</span>
+                        </div>
+                      </div>
+                      <p>Scheduled Maintenance on 24/12/2015</p>
+                    </article>
+
+                    <article class="ticket">
+                      <div class="ticket__header row">
+                        <div class="col-xs-6">
+                          <div class="ticket__id"><strong>ID 1234</strong></div>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          <span class="status status--active">ACTIVE ONLY</span>
+                        </div>
+                      </div>
+                      <p>Scheduled Maintenance on 24/12/2015</p>
+                    </article>
+
+                    <article class="ticket">
+                      <div class="ticket__header row">
+                        <div class="col-xs-6">
+                          <div class="ticket__id"><strong>ID 1234</strong></div>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                          <span class="status status--active">ACTIVE ONLY</span>
+                        </div>
+                      </div>
+                      <p>Scheduled Maintenance on 24/12/2015</p>
+                    </article>
+                  </div>
+                </section>
+              </aside>
+
+              <!-- Tickets Content -->
+              <section class="tickets__content">
+                <div class="tickets__messages">
+                  <div class="tickets__scroll">
+                    <div class="message">
+                      <div class="message__avatar avatar">
+                        <img src="images/icons/support.svg" alt="">
+                      </div>
+                      <div class="message__content">
+                        <span class="message__date text-light">22/10/2015 17:10</span>
+                        <p>
+                          As you know, we’ve been working on Mockuuups Studio for last
+                          few months. We were surprised by your feedback related to
+                          user experience, mockups or tricky bugs, thank you again
+                          and again!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="message">
+                      <div class="message__avatar avatar">
+                        <img src="images/icons/support.svg" alt="">
+                      </div>
+                      <div class="message__content">
+                        <span class="message__date text-light">22/10/2015 17:10</span>
+                        <p>
+                          As you know, we’ve been working on Mockuuups Studio for last
+                          few months. We were surprised by your feedback related to
+                          user experience, mockups or tricky bugs, thank you again
+                          and again!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="message">
+                      <div class="message__avatar avatar">
+                        <img src="images/icons/support.svg" alt="">
+                      </div>
+                      <div class="message__content">
+                        <span class="message__date text-light">22/10/2015 17:10</span>
+                        <p>
+                          As you know, we’ve been working on Mockuuups Studio for last
+                          few months. We were surprised by your feedback related to
+                          user experience, mockups or tricky bugs, thank you again
+                          and again!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="message">
+                      <div class="message__avatar avatar">
+                        <img src="images/icons/support.svg" alt="">
+                      </div>
+                      <div class="message__content">
+                        <span class="message__date text-light">22/10/2015 17:10</span>
+                        <p>
+                          As you know, we’ve been working on Mockuuups Studio for last
+                          few months. We were surprised by your feedback related to
+                          user experience, mockups or tricky bugs, thank you again
+                          and again!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="message message--user">
+                      <div class="message__avatar avatar">
+                        <img src="images/icons/smile.svg" alt="">
+                      </div>
+                      <div class="message__content">
+                        <span class="message__date text-light">22/10/2015 17:10</span>
+                        <p>
+                          As you know, we’ve been working on Mockuuups Studio for last
+                          few months. We were surprised by your feedback related to
+                          user experience, mockups or tricky bugs, thank you again
+                          and again!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="message message--user">
+                      <div class="message__avatar avatar">
+                        <img src="images/icons/smile.svg" alt="">
+                      </div>
+                      <div class="message__content">
+                        <span class="message__date text-light">22/10/2015 17:10</span>
+                        <p>
+                          As you know, we’ve been working on Mockuuups Studio for last
+                          few months. We were surprised by your feedback related to
+                          user experience, mockups or tricky bugs, thank you again
+                          and again!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="message message--user">
+                      <div class="message__avatar avatar">
+                        <img src="images/icons/smile.svg" alt="">
+                      </div>
+                      <div class="message__content">
+                        <span class="message__date text-light">22/10/2015 17:10</span>
+                        <p>
+                          As you know, we’ve been working on Mockuuups Studio for last
+                          few months. We were surprised by your feedback related to
+                          user experience, mockups or tricky bugs, thank you again
+                          and again!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="message message--user">
+                      <div class="message__avatar avatar">
+                        <img src="images/icons/smile.svg" alt="">
+                      </div>
+                      <div class="message__content">
+                        <span class="message__date text-light">22/10/2015 17:10</span>
+                        <p>
+                          As you know, we’ve been working on Mockuuups Studio for last
+                          few months. We were surprised by your feedback related to
+                          user experience, mockups or tricky bugs, thank you again
+                          and again!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tickets__input">
+                  <form action="#" class="message-input">
+                      <div class="message-input__left">
+                        <div class="message-input__avatar avatar">
+                          <img src="images/t_user.png" alt="">
+                        </div>
+                      </div>
+
+                      <div class="message-input__middle">
+                        <textarea name="message" class="message-input__textarea js-auto-grow" placeholder="Type your message here"></textarea>
+                      </div>
+
+                      <div class="message-input__right">
+                        <button type="submit" name="button" class="btn btn-send">SEND</button>
+                      </div>
+                  </form>
+                </div>
+
+              </section>
+            </div>
+          </div>
+
+          <div class="tab-pane " id="monitoring">
+            <div class="chart-graph js-chart-graph" id="monitoring-chart" data-id="1" data-url="some.url">
+              <header class="chart-graph__header">
+                <h5 class="chart-graph__heading">Bandwidth</h5>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <ul class="filter-inline js-chart-graph-filter">
+                      <li class="filter-inline__item"><a href="#" data-type="current" class="filter-inline__link is-active">Current</a></li>
+                      <li class="filter-inline__item"><a href="#" data-type="hours" class="filter-inline__link">24 Hours</a></li>
+                      <li class="filter-inline__item"><a href="#" data-type="week" class="filter-inline__link">Week</a></li>
+                      <li class="filter-inline__item"><a href="#" data-type="month" class="filter-inline__link">Month</a></li>
+                      <li class="filter-inline__item"><a href="#" data-type="year" class="filter-inline__link">Year</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-6 text-md-right mt-1-sm-down js-chart-graph-legend"></div>
+                </div>
+              </header>
+
+
+              <div class="chart-graph__content">
+                <canvas></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="history">
+            <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+              <div class="col-xs-12 col-md-8">
+                <div class="table-caption">
+                  <h4 class="table-caption__heading">History</h4>
+                  <span class="separator"></span>
+                  <div class="input-search input-search--md ">
+                    <input type="search" class="input-search__input form-control" id="server-history-table-search" placeholder="Search...">
+                    <img src="images/icons/search.svg" alt="" class="input-search__icon">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-right"></div>
+            </div>
+
+            <table class="dataTable--table" id="server-history-table"></table>
+          </div>
+
+          <div class="tab-pane" id="backups">
+             <div class="alert alert-warning alert-single fade show in">
+               <p>Sweet, now you can login with your new password!</p>
+               <button type="button" class="alert__close" data-dismiss="alert" aria-label="Close"><i class="fi-close" aria-hidden="true"></i></button>
+             </div>
+
+             <div class="row row--flex row--flex-middle row--flex-wrap mb-2">
+               <div class="col-xs-12 col-md-8">
+                 <div class="table-caption">
+                   <h4 class="table-caption__heading">Backups</h4>
+                   <span class="separator"></span>
+                   <div class="input-search input-search--md ">
+                     <input type="search" class="input-search__input form-control" id="server-backups-table-search" placeholder="Search...">
+                     <img src="images/icons/search.svg" alt="" class="input-search__icon">
+                   </div>
+                 </div>
+               </div>
+               <div class="col-xs-12 col-md-4 text-right">
+                 <a href="#" class="link-bold">Create a Backup</a>
+               </div>
+             </div>
+
+              <table class="dataTable--table" id="server-backups-table"></table>
+           </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modals for this page -->
+@@include('partials/modals/server-details/edit-vcpu.html')
+@@include('partials/modals/server-details/edit-vram.html')
+@@include('partials/modals/server-details/edit-nic.html')
+@@include('partials/modals/server-details/edit-storage.html')
+@@include('partials/modals/server-details/rename-server.html')
+
+
+@@include('partials/footer.html')
